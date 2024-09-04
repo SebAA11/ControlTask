@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ACTIVIDAD" id="97FC76DE-A035-440B-DFC5-184CD9EFE059" version="3.5">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:22:01 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>97FC76DE-A035-440B-DFC5-184CD9EFE059</designId>
+</OSDM_Design>

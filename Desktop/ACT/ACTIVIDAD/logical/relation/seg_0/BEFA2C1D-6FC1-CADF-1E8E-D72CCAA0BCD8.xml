@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relacion_Estado_Agenda" directorySegmentName="seg_0" id="BEFA2C1D-6FC1-CADF-1E8E-D72CCAA0BCD8">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:18:04 UTC</createdTime>
+<ownerDesignName>ACTIVIDAD</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<sourcePk>0B4DC0BA-4AF6-046E-D838-9A3AC435F711</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>Clasifica a</nameOnSource>
+<nameOnTarget>Es clasificada por</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DE600455-0DFA-E0D7-CDA1-721CD917683D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C947E58A-24DF-10DB-A6D8-22A11F570E1A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

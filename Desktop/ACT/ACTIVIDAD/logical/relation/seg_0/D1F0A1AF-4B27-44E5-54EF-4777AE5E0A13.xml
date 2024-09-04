@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="D1F0A1AF-4B27-44E5-54EF-4777AE5E0A13">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:52:49 UTC</createdTime>
+<ownerDesignName>ACTIVIDAD</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<sourcePk>5B2EA0E9-8D46-F60A-2084-BAB1871F3678</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>es agendado</nameOnSource>
+<nameOnTarget>Agenda a</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7865F080-8767-B415-B950-7106643902DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C947E58A-24DF-10DB-A6D8-22A11F570E1A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
