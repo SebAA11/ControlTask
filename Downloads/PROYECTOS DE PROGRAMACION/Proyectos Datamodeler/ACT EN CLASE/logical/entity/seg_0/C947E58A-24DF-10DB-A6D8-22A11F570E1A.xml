@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C947E58A-24DF-10DB-A6D8-22A11F570E1A" name="Agenda">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:02:58 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Agenta_ID" id="8D533855-0AF6-DFCD-D21A-56C4135A3C09">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:07:02 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Solicitud" id="35DB788C-3B41-3CB5-4F09-8025E6357484">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:07:16 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Cita" id="42CFE29B-8D4A-C5EB-1C68-355916D4B8AA">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:08:07 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado_Agenda_ID" id="7D5908ED-48D2-CE28-CCBE-E5E188DD16CB">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:20:16 UTC</createdTime>
+<generatorID>BEFA2C1D-6FC1-CADF-1E8E-D72CCAA0BCD8</generatorID>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<referedAttribute>EE16A04B-BA98-F9D3-369F-B2A09BD94861</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0CB5533F-5A44-DFA2-2977-F819E15E3808" name="Agenda PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 02:07:13 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8D533855-0AF6-DFCD-D21A-56C4135A3C09</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

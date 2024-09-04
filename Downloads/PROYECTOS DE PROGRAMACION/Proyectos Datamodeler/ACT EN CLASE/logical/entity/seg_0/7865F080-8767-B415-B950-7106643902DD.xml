@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7865F080-8767-B415-B950-7106643902DD" name="Terceros">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:22:55 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>Ter</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Terceros_ID" id="2685210F-6693-3694-D11F-A642DFA045E7">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:35:37 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="22D11007-5283-0DBD-E5A1-49A0D592ECF8">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:38:42 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="42A5D40E-55A4-6019-5DEB-E158CB3D4951">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:54:13 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Telefono" id="53C1B2ED-46A8-F725-C0DE-409E1EBA4CC1">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:55:10 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Correo" id="8763D49E-32C4-75B8-7B48-DD4B64A9E1B6">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:55:29 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Direccion" id="C23D832C-8192-86C1-4F82-153B6DFE9305">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:55:52 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B2EA0E9-8D46-F60A-2084-BAB1871F3678" name="Terceros PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-04 01:37:46 UTC</createdTime>
+<ownerDesignName>ACT EN CLASE</ownerDesignName>
+<engineerTo>
+<item key="C78A561D-7A5E-30D2-17EE-6D421CF26670" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2685210F-6693-3694-D11F-A642DFA045E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
