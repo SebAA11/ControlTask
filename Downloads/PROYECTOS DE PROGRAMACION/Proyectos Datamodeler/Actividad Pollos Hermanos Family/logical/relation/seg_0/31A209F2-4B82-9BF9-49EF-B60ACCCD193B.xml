@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_3" directorySegmentName="seg_0" id="31A209F2-4B82-9BF9-49EF-B60ACCCD193B">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 19:09:05 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<sourcePk>A5FA0232-9B36-6110-E409-739599FA51DC</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>84494BA2-E9D9-8815-8E38-5E4A3FC92FE2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D002950C-1AD6-7C6A-4415-5BAA2B58DCC3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

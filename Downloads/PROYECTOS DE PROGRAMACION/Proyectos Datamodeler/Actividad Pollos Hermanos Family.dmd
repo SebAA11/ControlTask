@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Actividad Pollos Hermanos Family" id="CC37843C-877E-061B-D527-7D4D443FF9D8" version="3.5">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:36:32 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CC37843C-877E-061B-D527-7D4D443FF9D8</designId>
+</OSDM_Design>

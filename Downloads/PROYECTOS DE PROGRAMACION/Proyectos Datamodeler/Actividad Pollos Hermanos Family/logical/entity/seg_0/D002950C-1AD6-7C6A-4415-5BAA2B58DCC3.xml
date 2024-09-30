@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D002950C-1AD6-7C6A-4415-5BAA2B58DCC3" name="Menu">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:52:35 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Menu_ID" id="2783DAAB-3117-E398-8C67-30D4ED362EE6">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:52:56 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Meu" id="9C3EF70E-0A19-A6DD-6F4F-713E7131BCF6">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:53:43 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Precio" id="3BB89254-C0F2-A3DA-7A07-C0CB99EFA3D9">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:53:07 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Plato_ID" id="BE4AA81F-F07C-6AC0-E575-D65EFA0B78E8">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 19:09:05 UTC</createdTime>
+<generatorID>31A209F2-4B82-9BF9-49EF-B60ACCCD193B</generatorID>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<referedAttribute>B5788CD0-5EEF-862C-88B7-378F7B38F441</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C519040A-BB39-7EF9-46B6-50F92146D09A" name="Menu PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:53:06 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2783DAAB-3117-E398-8C67-30D4ED362EE6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

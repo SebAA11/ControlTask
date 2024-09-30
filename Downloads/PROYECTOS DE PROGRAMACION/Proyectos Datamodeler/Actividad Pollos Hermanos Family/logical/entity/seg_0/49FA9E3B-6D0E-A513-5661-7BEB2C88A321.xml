@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="49FA9E3B-6D0E-A513-5661-7BEB2C88A321" name="Reseva">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:37:23 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Reserva_ID" id="3F3DB59A-C1A9-6107-2F76-11EE26234E73">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:37:40 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="096C9D40-F6FE-526A-B499-C03C2F7F3812">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:37:51 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Hora" id="DB8745D7-1857-D026-5304-73368C16749E">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:43:29 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Numero_Comensales" id="AFD41F9C-DAFB-D0CF-1C62-024A75280AE4">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:44:39 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Valor_Reserva" id="FA86F656-5183-106F-5F96-45B2FA5C3840">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:45:27 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente_ID" id="EBB15B57-DD68-9BD4-94FB-8F4557675BE7">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 19:07:19 UTC</createdTime>
+<generatorID>1718DD03-FCFF-2BFE-27F6-16EB6F7E9A2B</generatorID>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<referedAttribute>6570A965-B2E9-41A3-7B81-E2785407F6E3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Mesa_ID" id="758E02F5-26F4-D021-F110-731127B0F8B0">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 19:08:03 UTC</createdTime>
+<generatorID>D9FD8FE9-079D-CD19-7AEF-A51FE902453B</generatorID>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<referedAttribute>CD1FCF4A-5256-63D0-40A1-335BD4ED0ABD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Factura_ID" id="B9174EE1-A35E-5E26-3A55-569043C6585A">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 19:20:39 UTC</createdTime>
+<generatorID>38B048C7-C2CA-A35F-AF02-B407440FCC82</generatorID>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<referedAttribute>C4EB7434-E5D4-0387-91EB-F11B0F21F86A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="613955DE-E25F-AEFE-7D7E-59D4B66DD183" name="Reseva PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:37:54 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<engineerTo>
+<item key="053BA2AC-24DE-2A80-EB1E-26CD8FA44435" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3F3DB59A-C1A9-6107-2F76-11EE26234E73</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="F9C60737-7421-FBA9-E48D-9871DC4F95FB" mainViewID="FEFDD1D0-8118-3572-0B41-001B777BF9D6">
+<createdBy>brian</createdBy>
+<createdTime>2024-09-30 18:36:32 UTC</createdTime>
+<ownerDesignName>Actividad Pollos Hermanos Family</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
