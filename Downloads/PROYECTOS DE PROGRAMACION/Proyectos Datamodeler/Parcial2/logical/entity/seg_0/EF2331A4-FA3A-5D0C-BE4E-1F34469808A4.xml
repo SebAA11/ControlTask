@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EF2331A4-FA3A-5D0C-BE4E-1F34469808A4" name="Habitacion">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:43:44 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Habitacion_ID" id="A0866D9C-E686-3BDB-0589-D979A63217B3">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:43:53 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num_Habitaciones" id="C53C593B-5762-4977-4F33-3D5E684C25D0">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:44:05 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="EDA9A61E-AE4C-7456-C106-EBFE9A6D1F97">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:44:36 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Temporada_ID" id="5894AC8C-5DAD-7D35-E114-64DF0EAB001C">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:54:29 UTC</createdTime>
+<generatorID>9A3B8B0B-16A6-08B5-30A8-F6685C690C22</generatorID>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<referedAttribute>D2578BCF-2F56-6621-101D-171401864334</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73888939-0C2E-A452-4635-6913030DBB2B" name="Habitaciones PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:44:03 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A0866D9C-E686-3BDB-0589-D979A63217B3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

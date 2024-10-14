@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C9B48096-4658-E3A8-50D4-24D3F7F59B6A" name="Reserva">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:41:45 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Reserva_ID" id="201EE7FF-0BCC-B36D-A7D0-0858EBECDAEB">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:41:52 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Dia_Hospedaje" id="23C24013-8788-31FC-EC4B-4EB55B07BAA0">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:42:24 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cant_Habitaciones" id="FA3DD127-7ABC-8534-44AD-0A99FCD62A2E">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:42:54 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente_Frecuente" id="932C4A64-2CEB-E905-C573-9EAEDC615F23">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:43:14 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente_ID" id="2E02CAFB-A215-984C-AC00-5B4F2FCAC93D">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 21:24:44 UTC</createdTime>
+<generatorID>7171AACC-8BC7-6A53-BB48-F8C1B4B552BF</generatorID>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<referedAttribute>F15D838A-96CB-D302-7028-66A0E13C6EAF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado_Reserva_ID" id="5FDBAE96-0A9D-10F6-5C17-C2B36A632270">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 21:28:29 UTC</createdTime>
+<generatorID>E3C093EA-0B61-F850-AF32-DA597B75501A</generatorID>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<referedAttribute>19642DFD-58A9-4DDA-EB3A-DEB256ED1064</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="ED7485D9-9A3E-4BA9-C904-C62FC3DE6C26" name="Reserva PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:42:02 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>201EE7FF-0BCC-B36D-A7D0-0858EBECDAEB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

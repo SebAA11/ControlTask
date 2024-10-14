@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6025097A-A92F-04E5-1270-DAB3DE0810B2" name="Factura">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:49:37 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Factura_ID" id="908FDD87-225A-408D-414B-E93E185DE867">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:49:47 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num_Facturado" id="4CC7C78D-DA68-AE51-7C33-43DC157260D1">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:50:05 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num_Ident" id="E36CB048-36A3-857B-A808-C959EB05CBB5">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:51:45 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Gasto_ID" id="640AA050-5379-79CE-6FC8-552B33178E2F">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:55:09 UTC</createdTime>
+<generatorID>D4E7D3EE-6D40-264E-B3BC-96A73D2AF389</generatorID>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<referedAttribute>1F43D648-D20F-A928-6194-99CBDB41139E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E8D8C4F2-81BE-857E-8616-AB79036221D5" name="Factura PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:50:04 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>908FDD87-225A-408D-414B-E93E185DE867</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D542CEEB-E34C-AC23-96E3-42D1A86518A9" name="Cuenta">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:46:00 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Cuenta_ID" id="5D4CEAAA-7D4F-AD35-A994-ACF08F890C5D">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:46:41 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Num_Cuenta" id="9B97A5FF-5D45-9FAC-DA6B-8A5C512B3FD3">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:46:59 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Apertura" id="1B645ECD-75A4-AABD-ACDC-1B8B5A9166F4">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:47:20 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Responsable_ID" id="37DF30BC-D3CB-8A2F-2543-A52A26058779">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:54:15 UTC</createdTime>
+<generatorID>FC3DD03F-97C6-B498-E166-64369A3F55ED</generatorID>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<referedAttribute>08D2836F-14D3-D5E8-A75D-6BBC0E20FE0B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4B5E96CA-9105-2299-AD4A-CDDAC0B74C88" name="Cuenta PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 20:46:57 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5D4CEAAA-7D4F-AD35-A994-ACF08F890C5D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

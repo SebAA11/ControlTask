@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="533E9373-50A3-0716-5551-3B58A3BFF1D6" name="Registro_Visitante">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 21:32:24 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Registro_Visitante" id="47A5AE63-1AAB-7191-7E46-949116CFE221">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 21:32:34 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Cliente_ID" id="6CC0B678-EE0C-3DE9-F6FB-5DE5ADACFFFE">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 21:33:14 UTC</createdTime>
+<generatorID>D2BB6509-E8C5-899A-EBF6-487241BA2FB3</generatorID>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<referedAttribute>F15D838A-96CB-D302-7028-66A0E13C6EAF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Habitacion_ID" id="EF39B329-3A55-CF28-5C0F-C16573E51D74">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 21:33:18 UTC</createdTime>
+<generatorID>E4CD7AAF-E879-8B20-A605-C86E77DF9B75</generatorID>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<referedAttribute>A0866D9C-E686-3BDB-0589-D979A63217B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="307D3F5B-56B4-46FE-1EAB-B550FBD2EA20" name="Registro_Visitante PK">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-14 21:32:48 UTC</createdTime>
+<ownerDesignName>Parcial2</ownerDesignName>
+<engineerTo>
+<item key="5E98205C-07DC-73C2-E8CE-27701E7E7590" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>47A5AE63-1AAB-7191-7E46-949116CFE221</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
