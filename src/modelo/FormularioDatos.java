@@ -4,32 +4,30 @@ public class FormularioDatos {
 
     private String titulo;
     private String descripcion;
-    private String tipoPapa;
+    private String complejidad;
+    private String estado;
+    private String responsable;
 
-
-    public FormularioDatos(String titulo, String descripcion, String tipoPapa) {
+    public FormularioDatos(String titulo, String descripcion, String complejidad, String estado, String responsable) {
         this.titulo = titulo;
         this.descripcion = descripcion;
-        this.tipoPapa = tipoPapa;
+        this.complejidad = complejidad;
+        this.estado = estado;
+        this.responsable = responsable;
       
     }
 
-   // public String obtenerDatos() {
-     //   String detalleVenta = "";
-       // if (alDetal) {
-        //    detalleVenta += "Al detal\n";
-        //}
-        //if (deBulto) {
-        //    detalleVenta += "De bulto\n";
-       // }
-        //if (!alDetal && !deBulto) {
-         //   detalleVenta += "No se seleccionó detalle de venta\n";
-        //}
+    // Metodo para obtener los datos  de creación de tarea formateados en un string
+    public String obtenerDatos() {
+        String detalleTarea = "";
 
-        //return "Producto: " + producto + "\n"
-         //       + "Cantidad: " + cantidad + "\n"
-         //       + "Tipo de papa: " + tipoPapa + "\n"
-         //       + "Método de entrega: " + metodoEntrega + "\n"
-         //       + "Detalle de Venta:\n" + detalleVenta;
-    //}
+        // Agregar información de complejidad, estado y responsable
+        detalleTarea += "Complejidad: " + complejidad + "\n";
+        detalleTarea += "Estado: " + estado + "\n";
+        detalleTarea += "Responsable: " + responsable + "\n";
+
+        return "Título: " + titulo + "\n"
+                + "Descripción: " + descripcion + "\n"
+                + "Detalle de Tarea:\n" + detalleTarea;
+    }
 }

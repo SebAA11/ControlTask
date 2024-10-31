@@ -17,9 +17,11 @@ public class JFCrearTarea extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        tProducto = new javax.swing.JTextField();
-        tCantidad = new javax.swing.JTextField();
-        cTipoPapa = new javax.swing.JComboBox<>();
+        tTitulo = new javax.swing.JTextField();
+        tDescripcion = new javax.swing.JTextField();
+        cComplejidad = new javax.swing.JComboBox<>();
+        cEstado = new javax.swing.JComboBox<>();
+        cResponsable = new javax.swing.JComboBox<>();
         bCrear = new javax.swing.JButton();
         bCancelar = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -44,15 +46,23 @@ public class JFCrearTarea extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("DESCRIPCION");
 
-        tCantidad.addActionListener(new java.awt.event.ActionListener() {
+        tDescripcion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 tCantidadActionPerformed(evt);
             }
         });
 
-        cTipoPapa.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        cTipoPapa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Alto", "Medio", "Bajo" }));
-        cTipoPapa.setToolTipText("");
+        cComplejidad.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        cComplejidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Alto", "Medio", "Bajo" }));
+        cComplejidad.setToolTipText("");
+
+        cEstado.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        cEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Pendiente", "En ejecución", "Finalizado" }));
+        cEstado.setToolTipText("");
+
+        cResponsable.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Desarrollador 1", "Desarrollador 2", "Desarrollador 3" }));
+        cResponsable.setToolTipText("");
 
         bCrear.setBackground(new java.awt.Color(204, 255, 204));
         bCrear.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -90,7 +100,7 @@ public class JFCrearTarea extends javax.swing.JFrame {
                         .addContainerGap(120, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jLabel4)
                                 .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -98,8 +108,8 @@ public class JFCrearTarea extends javax.swing.JFrame {
                                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel2)
                                 .addComponent(bCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(cTipoPapa, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addComponent(tProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(cComplejidad, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(tTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
@@ -110,15 +120,15 @@ public class JFCrearTarea extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tDescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cTipoPapa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cComplejidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -164,7 +174,9 @@ public class JFCrearTarea extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton bCancelar;
     public javax.swing.JButton bCrear;
-    public javax.swing.JComboBox<String> cTipoPapa;
+    public javax.swing.JComboBox<String> cComplejidad;
+    public javax.swing.JComboBox<String> cEstado;
+    public javax.swing.JComboBox<String> cResponsable;
     private javax.swing.JCheckBox jCheckBox3;
     private javax.swing.JComboBox<String> jComboBox1;
     public javax.swing.JLabel jLabel1;
@@ -174,7 +186,7 @@ public class JFCrearTarea extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
-    public javax.swing.JTextField tCantidad;
-    public javax.swing.JTextField tProducto;
+    public javax.swing.JTextField tDescripcion;
+    public javax.swing.JTextField tTitulo;
     // End of variables declaration//GEN-END:variables
 }

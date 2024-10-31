@@ -22,12 +22,14 @@ public class ControlJFCrearTarea implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == vista.bCrear) {
 
-            String titulo = vista.tProducto.getText();
-            String descripcion = vista.tCantidad.getText();
-            String tipoPapa = vista.cTipoPapa.getSelectedItem().toString();
+            String titulo = vista.tTitulo.getText();
+            String descripcion = vista.tDescripcion.getText();
+            String complejidad = String.valueOf(vista.cComplejidad.getNextFocusableComponent());
+            String estado = String.valueOf(vista.cEstado.getNextFocusableComponent());
+            String responsable = String.valueOf(vista.cResponsable.getNextFocusableComponent());
 
            
-FormularioDatos datos = new FormularioDatos(titulo, descripcion, tipoPapa);
+FormularioDatos datos = new FormularioDatos(titulo, descripcion, complejidad, estado, responsable);
 
             JOptionPane.showMessageDialog(vista,
                     datos.obtenerDatos(),
