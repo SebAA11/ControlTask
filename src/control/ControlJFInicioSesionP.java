@@ -13,6 +13,7 @@ public class ControlJFInicioSesionP implements ActionListener {
 
         v.bEntrar.addActionListener(this);
         v.bRegistro.addActionListener(this);
+        v.bsalir.addActionListener(this);
         v.setVisible(true);
         v.setLocationRelativeTo(v);
 
