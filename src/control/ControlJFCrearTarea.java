@@ -24,9 +24,9 @@ public class ControlJFCrearTarea implements ActionListener {
 
             String titulo = vista.tTitulo.getText();
             String descripcion = vista.tDescripcion.getText();
-            String complejidad = String.valueOf(vista.cComplejidad.getNextFocusableComponent());
-            String estado = String.valueOf(vista.cEstado.getNextFocusableComponent());
-            String responsable = String.valueOf(vista.cResponsable.getNextFocusableComponent());
+            String complejidad = String.valueOf(vista.cComplejidad.getSelectedItem());
+            String estado = String.valueOf(vista.cEstado.getSelectedItem());
+            String responsable = String.valueOf(vista.cResponsable.getSelectedItem());
 
            
 FormularioDatos datos = new FormularioDatos(titulo, descripcion, complejidad, estado, responsable);
