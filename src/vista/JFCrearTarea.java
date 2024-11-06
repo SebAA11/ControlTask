@@ -85,7 +85,7 @@ public class JFCrearTarea extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel2.setText("RESPONSABLE");
 
-        cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "User1", "User2", "User3"}));
+        cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cResponsable.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cResponsableActionPerformed(evt);
@@ -201,7 +201,7 @@ public class JFCrearTarea extends javax.swing.JFrame {
     public javax.swing.JComboBox<String> cEstado;
     public javax.swing.JComboBox<String> cResponsable;
     private javax.swing.JCheckBox jCheckBox3;
-    public javax.swing.JLabel jLabel;
+    private javax.swing.JLabel jLabel;
     public javax.swing.JLabel jLabel1;
     public javax.swing.JLabel jLabel2;
     public javax.swing.JLabel jLabel3;
