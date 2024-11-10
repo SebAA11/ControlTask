@@ -1,0 +1,18 @@
+-d
+C:\\Users\\brian\\Documents\\NetBeansProjects\\ControlTask\\ControlTask\\build\\classes
+-classpath
+"C:\\Users\\brian\\Documents\\NetBeansProjects\\ControlTask\\ControlTask\\build\\classes;C:\\Program Files\\NetBeans-23\\netbeans\\java\\modules\\ext\\AbsoluteLayout.jar"
+-sourcepath
+C:\\Users\\brian\\Documents\\NetBeansProjects\\ControlTask\\ControlTask\\src
+-target
+1.8
+-encoding
+UTF-8
+-g
+-processorpath
+"C:\\Program Files\\NetBeans-23\\netbeans\\java\\modules\\ext\\AbsoluteLayout.jar;C:\\Users\\brian\\Documents\\NetBeansProjects\\ControlTask\\ControlTask\\build\\empty"
+-s
+C:\\Users\\brian\\Documents\\NetBeansProjects\\ControlTask\\ControlTask\\build\\generated-sources\\ap-source-output
+-source
+1.8
+C:\\Users\\brian\\Documents\\NetBeansProjects\\ControlTask\\ControlTask\\src\\principal\\Principal.java
