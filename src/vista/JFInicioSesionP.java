@@ -34,8 +34,8 @@ public class JFInicioSesionP extends javax.swing.JFrame {
         txtContraseña = new javax.swing.JPasswordField();
         txtUsuario = new javax.swing.JTextField();
         bRegistro = new javax.swing.JButton();
-        bsalir = new javax.swing.JButton();
-        bEntrar = new javax.swing.JButton();
+        bSalir = new javax.swing.JButton();
+        bInicio = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -50,6 +50,9 @@ public class JFInicioSesionP extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         jLabel3.setText("Contraseña:");
 
+        txtContraseña.setToolTipText("INGRESA SU CONTRASEÑA");
+
+        txtUsuario.setToolTipText("INGRESA SU USUARIO");
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
@@ -62,21 +65,21 @@ public class JFInicioSesionP extends javax.swing.JFrame {
         bRegistro.setText("Crear Cuenta");
         bRegistro.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        bsalir.setBackground(new java.awt.Color(255, 106, 101));
-        bsalir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bsalir.setForeground(new java.awt.Color(253, 0, 0));
-        bsalir.setText("Salir");
-        bsalir.addActionListener(new java.awt.event.ActionListener() {
+        bSalir.setBackground(new java.awt.Color(255, 106, 101));
+        bSalir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bSalir.setForeground(new java.awt.Color(253, 0, 0));
+        bSalir.setText("Salir");
+        bSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bsalirActionPerformed(evt);
+                bSalirActionPerformed(evt);
             }
         });
 
-        bEntrar.setBackground(new java.awt.Color(204, 255, 204));
-        bEntrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bEntrar.setForeground(new java.awt.Color(0, 153, 0));
-        bEntrar.setText("Iniciar Sesión");
-        bEntrar.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        bInicio.setBackground(new java.awt.Color(204, 255, 204));
+        bInicio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        bInicio.setForeground(new java.awt.Color(0, 153, 0));
+        bInicio.setText("Iniciar Sesión");
+        bInicio.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
         jLabel2.setText("Usuario:");
@@ -92,9 +95,9 @@ public class JFInicioSesionP extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(124, 124, 124)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(bEntrar, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE)
+                            .addComponent(bInicio, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
                             .addComponent(bRegistro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(bSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addContainerGap(36, Short.MAX_VALUE)
@@ -127,11 +130,11 @@ public class JFInicioSesionP extends javax.swing.JFrame {
                     .addComponent(jLabel3)
                     .addComponent(txtContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(45, 45, 45)
-                .addComponent(bEntrar, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(bRegistro, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(bsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(bSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(33, Short.MAX_VALUE))
         );
 
@@ -172,9 +175,9 @@ public class JFInicioSesionP extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtUsuarioActionPerformed
 
-    private void bsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bsalirActionPerformed
+    private void bSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSalirActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_bsalirActionPerformed
+    }//GEN-LAST:event_bSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -213,9 +216,9 @@ public class JFInicioSesionP extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton bEntrar;
+    public javax.swing.JButton bInicio;
     public javax.swing.JButton bRegistro;
-    public javax.swing.JButton bsalir;
+    public javax.swing.JButton bSalir;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;

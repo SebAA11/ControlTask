@@ -2,26 +2,27 @@ package control;
 
 import vista.JFInicioSesionP;
 import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
 import java.awt.event.ActionListener;
 
-public class ControlJFInicioSesionP implements ActionListener {
+public class ControlJFInicioSesion implements ActionListener {
 
     JFInicioSesionP v;
 
-    public ControlJFInicioSesionP() {
+    public ControlJFInicioSesion() {
         this.v = new JFInicioSesionP();
 
-        v.bEntrar.addActionListener(this);
+        v.bInicio.addActionListener(this);
         v.bRegistro.addActionListener(this);
-        v.bsalir.addActionListener(this);
+        v.bSalir.addActionListener(this);
         v.setVisible(true);
-        v.setLocationRelativeTo(v);
+        v.setLocationRelativeTo(null);
 
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == v.bEntrar) {
+        if (e.getSource() == v.bInicio) {
             new ControlJFMenuTareas();
             v.dispose();
 
@@ -30,7 +31,7 @@ public class ControlJFInicioSesionP implements ActionListener {
             new ControlJFRegistro();
             v.dispose();
         }
-        if (e.getSource() == v.bsalir) {
+        if (e.getSource() == v.bSalir) {
             System.exit(0);
         }
     }

@@ -11,21 +11,20 @@ public class ControlJFRegistro implements ActionListener {
 
     public ControlJFRegistro() {
         this.v = new JFRegistro();
-        v.bregistrar.addActionListener(this);
-        v.bvolver.addActionListener(this);
+        
         v.setVisible(true);
-        v.setLocationRelativeTo(v);
+        v.setLocationRelativeTo(null);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == v.bregistrar) {
+        if (e.getSource() == v.bRegistrar) {
             JOptionPane.showMessageDialog(null, "REGISTRO EXITOSO");
             v.dispose();
 
         }
-        if (e.getSource() == v.bvolver) {
-            new ControlJFInicioSesionP();
+        if (e.getSource() == v.bRegreso) {
+            new ControlJFInicioSesion();
             v.dispose();
         }
        

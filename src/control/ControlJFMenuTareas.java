@@ -15,6 +15,7 @@ import java.awt.event.ActionListener;
    
         vista.setVisible(true);
         vista.setLocationRelativeTo(null);
+        
     }
      @Override
     public void actionPerformed(ActionEvent e) {

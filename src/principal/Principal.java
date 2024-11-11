@@ -1,9 +1,9 @@
 package principal;
 
-import control.ControlJFInicioSesionP;
+import control.ControlJFInicioSesion;
 
 public class Principal {
     public static void main(String[] args) {
-        ControlJFInicioSesionP controlJFMenuTareas = new ControlJFInicioSesionP();
+        ControlJFInicioSesion controlJFMenuTareas = new ControlJFInicioSesion();
     }
 }
