@@ -14,7 +14,7 @@ import java.awt.event.ActionListener;
         this.vista = new JFMenuTareas();
    
         vista.setVisible(true);
-        vista.setLocationRelativeTo(null);
+        vista.setLocationRelativeTo(vista);
         
     }
      @Override

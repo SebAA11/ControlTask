@@ -1,31 +1,31 @@
 package control;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import javax.swing.JOptionPane;
 import vista.JFRegistro;
+import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
+import java.awt.event.ActionListener;
 
 public class ControlJFRegistro implements ActionListener {
 
-    JFRegistro v;
+    JFRegistro vista;
 
     public ControlJFRegistro() {
-        this.v = new JFRegistro();
+        this.vista = new JFRegistro();
         
-        v.setVisible(true);
-        v.setLocationRelativeTo(null);
+        vista.setVisible(true);
+        vista.setLocationRelativeTo(null);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == v.bRegistrar) {
+        if (e.getSource() == vista.bRegistrar) {
             JOptionPane.showMessageDialog(null, "REGISTRO EXITOSO");
-            v.dispose();
+            vista.dispose();
 
         }
-        if (e.getSource() == v.bRegreso) {
+        if (e.getSource() == vista.bRegreso) {
             new ControlJFInicioSesion();
-            v.dispose();
+            vista.dispose();
         }
        
 

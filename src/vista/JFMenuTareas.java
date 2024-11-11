@@ -170,10 +170,10 @@ public class JFMenuTareas extends JFrame {
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(252, 252, 252)
                 .addComponent(BMover, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(239, 239, 239)
+                .addGap(235, 235, 235)
                 .addComponent(BEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(253, Short.MAX_VALUE))
-            .addComponent(jScrollPane1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 968, Short.MAX_VALUE)
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -207,7 +207,7 @@ public class JFMenuTareas extends JFrame {
         jLabel8.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel8.setText("COMPLEJIDAD:");
 
-        cComplejidad.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        cComplejidad.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         cComplejidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Bajo", "Medio", "Alto" }));
         cComplejidad.setToolTipText("EL GRADO DE COMPLEJIDAD CONSIDERADO PARA SU TAREA");
         cComplejidad.setBorder(new javax.swing.border.MatteBorder(null));
@@ -215,7 +215,7 @@ public class JFMenuTareas extends JFrame {
         jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel9.setText("ESTADO:");
 
-        cEstado.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        cEstado.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         cEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Por hacer", "En progreso", "Terminado" }));
         cEstado.setToolTipText("ESTADO INICIAL DE SU TAREA");
         cEstado.setBorder(new javax.swing.border.MatteBorder(null));
@@ -225,7 +225,7 @@ public class JFMenuTareas extends JFrame {
             }
         });
 
-        cResponsable.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        cResponsable.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Responsable 1", "Responsable 2" }));
         cResponsable.setToolTipText("RESPONSABLE");
         cResponsable.setBorder(new javax.swing.border.MatteBorder(null));
@@ -303,7 +303,7 @@ public class JFMenuTareas extends JFrame {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(171, Short.MAX_VALUE)
+                .addContainerGap(163, Short.MAX_VALUE)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cComplejidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8)
