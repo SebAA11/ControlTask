@@ -64,6 +64,11 @@ public class JFInicioSesionP extends javax.swing.JFrame {
         bRegistro.setForeground(new java.awt.Color(0, 153, 255));
         bRegistro.setText("Crear Cuenta");
         bRegistro.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        bRegistro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bRegistroActionPerformed(evt);
+            }
+        });
 
         bSalir.setBackground(new java.awt.Color(255, 106, 101));
         bSalir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -185,6 +190,10 @@ public class JFInicioSesionP extends javax.swing.JFrame {
     private void bInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bInicioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_bInicioActionPerformed
+
+    private void bRegistroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bRegistroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bRegistroActionPerformed
 
     /**
      * @param args the command line arguments
