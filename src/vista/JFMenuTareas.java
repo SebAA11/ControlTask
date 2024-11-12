@@ -206,7 +206,7 @@ public class JFMenuTareas extends JFrame {
         cComplejidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Bajo", "Medio", "Alto" }));
         cComplejidad.setToolTipText("EL GRADO DE COMPLEJIDAD CONSIDERADO PARA SU TAREA");
         cComplejidad.setBorder(new javax.swing.border.MatteBorder(null));
-        cComplejidad.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        cComplejidad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jLabel9.setText("ESTADO:");
@@ -215,7 +215,7 @@ public class JFMenuTareas extends JFrame {
         cEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Por hacer", "En progreso", "Terminado" }));
         cEstado.setToolTipText("ESTADO INICIAL DE SU TAREA");
         cEstado.setBorder(new javax.swing.border.MatteBorder(null));
-        cEstado.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        cEstado.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cEstado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cEstadoActionPerformed(evt);
@@ -226,7 +226,7 @@ public class JFMenuTareas extends JFrame {
         cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Responsable 1", "Responsable 2" }));
         cResponsable.setToolTipText("RESPONSABLE");
         cResponsable.setBorder(new javax.swing.border.MatteBorder(null));
-        cResponsable.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        cResponsable.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cResponsable.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cResponsableActionPerformed(evt);
