@@ -17,12 +17,7 @@ public class JFMenuTareas extends JFrame {
         
   
     }
-    
- 
-
-    
-    
-    
+  
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -93,11 +88,11 @@ public class JFMenuTareas extends JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
+                .addGap(39, 39, 39)
                 .addComponent(jLabel7)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(57, 57, 57)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(528, Short.MAX_VALUE))
+                .addContainerGap(466, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 230, 780));
@@ -268,6 +263,15 @@ public class JFMenuTareas extends JFrame {
         tTitulo.setRows(5);
         tTitulo.setToolTipText("TITULO DE LA TAREA A CREAR");
         tTitulo.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        tTitulo.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                tTituloAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
         jScrollPane2.setViewportView(tTitulo);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -496,6 +500,10 @@ public class JFMenuTareas extends JFrame {
         
         JTableMenu.getTableHeader().setReorderingAllowed(false);
     }//GEN-LAST:event_JTableMenuAncestorMoved
+
+    private void tTituloAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_tTituloAncestorAdded
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tTituloAncestorAdded
 
     /**
      * @param args the command line arguments

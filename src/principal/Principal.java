@@ -1,9 +1,14 @@
 package principal;
 
-import control.ControlJFInicioSesion;
+import vista.JFInicioSesionP;
+
+
 
 public class Principal {
     public static void main(String[] args) {
-        ControlJFInicioSesion controlJFMenuTareas = new ControlJFInicioSesion();
+        JFInicioSesionP objetoLogin = new JFInicioSesionP();
+        objetoLogin.setVisible(true);
+        
+        
     }
 }

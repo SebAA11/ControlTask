@@ -1,8 +1,9 @@
-package control;
-import javax.swing.*;
+/**package control;
 
+import javax.swing.*;
 import vista.JFMenuTareas;
 import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
 import java.awt.event.ActionListener;
 
 
@@ -23,7 +24,7 @@ import java.awt.event.ActionListener;
         }
 
     }
-    
+    */
 
   
    

@@ -1,5 +1,6 @@
-package control;
+  /**package control;
 
+import javax.swing.*;
 import vista.JFRegistro;
 import java.awt.event.ActionEvent;
 import javax.swing.JOptionPane;
@@ -32,3 +33,4 @@ public class ControlJFRegistro implements ActionListener {
     }
 
 }
+   */
