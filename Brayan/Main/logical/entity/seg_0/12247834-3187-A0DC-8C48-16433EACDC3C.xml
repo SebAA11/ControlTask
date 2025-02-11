@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E5DAFB1-78F6-8113-1C62-4C1DB119DAE7" name="Plato_Ingrediente">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="12247834-3187-A0DC-8C48-16433EACDC3C" name="Factura">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:13:45 UTC</createdTime>
+<createdTime>2024-11-01 04:56:35 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,70 +15,90 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Plato_Ingrediente_ID" id="180474A4-FA5E-EEC1-B4AC-4ECCC524EF35">
+<Attribute name="Factura_ID" id="380218BF-E89B-923E-CE1B-54BA82933E0A">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:28 UTC</createdTime>
+<createdTime>2024-11-01 04:56:40 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Hora_Factura" id="94B1E833-CF67-D5B9-A40C-ABF2473DF374">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:56:46 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Total" id="8DE85C78-727F-F707-98B6-7D87FF3745B5">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:56:58 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado_Factura" id="03AF83FB-4024-25DC-BD56-3A6411DC54C1">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:57:06 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Pago_ID" id="6CE0AA70-1A68-5515-6AA0-BFFD3B8996DD">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-06 21:19:15 UTC</createdTime>
+<generatorID>955635A6-0A49-05F8-B273-3F6A9A1BA3BF</generatorID>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<referedAttribute>0B48D1F2-AA76-3CC7-7FA8-D8655190E84E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Plato_ID" id="9C901D8B-6D1F-5B84-9111-844D5022601F">
+<Attribute name="Descuento_ID" id="B1437C24-E742-5D73-7F8D-273769BF2D19">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:27:41 UTC</createdTime>
-<generatorID>5DB42878-7EAC-EC20-A52F-09CC2789D705</generatorID>
+<createdTime>2024-11-07 03:21:44 UTC</createdTime>
+<generatorID>408C0620-805D-39B0-DBCD-F71B52C29493</generatorID>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<referedAttribute>CA139AEC-5107-59BA-C924-FD7A7642A370</referedAttribute>
+<referedAttribute>71430B60-C3FD-7E0A-8FD8-2C576884D804</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Ingrediente_ID" id="F53450F7-8176-AFD9-6EC9-EEB95B01E95D">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:28:36 UTC</createdTime>
-<generatorID>F0185532-CD41-E48F-7BC7-9C0B0B4F780B</generatorID>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<referedAttribute>746BBD95-C2AA-5561-60E7-F64D9F6A27E0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Cantidad" id="33889FCE-27B2-E08E-CE19-3A47AB2CDCB5">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:07 UTC</createdTime>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8D8260BD-2BDE-7DA8-58F4-D8338BF7B5EB" name="Plato_Ingrediente PK">
+<identifier id="DCB152A6-C592-5763-CC68-A635E9478FA9" name="Factura PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:37 UTC</createdTime>
+<createdTime>2024-11-01 04:56:45 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>180474A4-FA5E-EEC1-B4AC-4ECCC524EF35</attributeRef>
+<attributeRef>380218BF-E89B-923E-CE1B-54BA82933E0A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="71A91738-4F69-6868-EC67-5D6B95E0D9C3" name="Categoria">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B00C6BB2-E446-8598-3559-B7BFC1A71BFF" name="Reserva_Mesa">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:12:59 UTC</createdTime>
+<createdTime>2024-11-07 03:23:56 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -11,14 +11,13 @@
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
 <growthPercent>0</growthPercent>
 <growthType>Year</growthType>
-<hierarchicalParent>6C8688F1-9218-D38E-072E-5586A58A5F11</hierarchicalParent>
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Categoria_ID" id="FA376290-7B0F-7C9F-C670-F8995F93A52A">
+<Attribute name="Reserva_Mesa_ID" id="A617C4C7-0633-3034-C340-BEDC877F355A">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 03:31:40 UTC</createdTime>
+<createdTime>2024-11-07 03:24:04 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -28,32 +27,46 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcion" id="0E2876EC-CCFF-05E7-0447-AFF1279A8D51">
+<Attribute name="Mesa_ID" id="3C5CBCB1-6894-0716-A1CA-B7BD2BAE78DF">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 03:31:46 UTC</createdTime>
+<createdTime>2024-11-07 03:24:31 UTC</createdTime>
+<generatorID>A9FAD149-DCF7-8199-500A-F7D44D6E23B1</generatorID>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1B501A2E-6675-0F59-14D8-6A0B338608F8</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>100</dataTypeSize>
-<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Reserva_ID" id="3200BE5C-CB15-E251-FF61-AEDF6D48574C">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-07 03:25:24 UTC</createdTime>
+<generatorID>9C294843-39FD-05E4-E319-88A426DA99BC</generatorID>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<referedAttribute>BF519574-0E88-8941-8D86-3DC9E90B8264</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="71D8DAB1-1A6E-2A1A-96C5-ECD81A8121CC" name="Categoria PK">
+<identifier id="A04535D4-5C10-E81F-E10F-F94B10FFD657" name="Reserva_Mesa PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 03:31:45 UTC</createdTime>
+<createdTime>2024-11-07 03:24:13 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>FA376290-7B0F-7C9F-C670-F8995F93A52A</attributeRef>
+<attributeRef>A617C4C7-0633-3034-C340-BEDC877F355A</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

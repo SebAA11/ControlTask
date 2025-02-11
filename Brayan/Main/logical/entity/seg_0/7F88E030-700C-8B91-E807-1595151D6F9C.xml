@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E5DAFB1-78F6-8113-1C62-4C1DB119DAE7" name="Plato_Ingrediente">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7F88E030-700C-8B91-E807-1595151D6F9C" name="Pago">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:13:45 UTC</createdTime>
+<createdTime>2024-11-01 04:54:55 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Plato_Ingrediente_ID" id="180474A4-FA5E-EEC1-B4AC-4ECCC524EF35">
+<Attribute name="Pago_ID" id="0B48D1F2-AA76-3CC7-7FA8-D8655190E84E">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:28 UTC</createdTime>
+<createdTime>2024-11-01 04:55:03 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,58 +27,64 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Plato_ID" id="9C901D8B-6D1F-5B84-9111-844D5022601F">
+<Attribute name="Fecha_Hora_Pago" id="1A1983E9-D79E-9E2F-9EE8-AAE74F8D659F">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:27:41 UTC</createdTime>
-<generatorID>5DB42878-7EAC-EC20-A52F-09CC2789D705</generatorID>
+<createdTime>2024-11-01 04:55:29 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<referedAttribute>CA139AEC-5107-59BA-C924-FD7A7642A370</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado_Pago" id="E57C45CC-290A-A324-8E00-9E9B76157FAA">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:55:38 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Monto_Total" id="E021CA96-16D4-5C47-470F-6D2D85A65FDE">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:56:07 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Metodo_Pago_ID" id="7A2A24B2-47AE-1283-3C45-A2B588EA3A3B">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-07 04:24:31 UTC</createdTime>
+<generatorID>796A5494-3FF3-71E3-40BD-8F9577721859</generatorID>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<referedAttribute>F9735227-209A-B850-71C6-EAD0707BEFDE</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Ingrediente_ID" id="F53450F7-8176-AFD9-6EC9-EEB95B01E95D">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:28:36 UTC</createdTime>
-<generatorID>F0185532-CD41-E48F-7BC7-9C0B0B4F780B</generatorID>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<referedAttribute>746BBD95-C2AA-5561-60E7-F64D9F6A27E0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Cantidad" id="33889FCE-27B2-E08E-CE19-3A47AB2CDCB5">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:07 UTC</createdTime>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8D8260BD-2BDE-7DA8-58F4-D8338BF7B5EB" name="Plato_Ingrediente PK">
+<identifier id="7F0030F0-446D-1D71-AA66-9CE045F7BE59" name="Pago PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:37 UTC</createdTime>
+<createdTime>2024-11-01 04:55:16 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>180474A4-FA5E-EEC1-B4AC-4ECCC524EF35</attributeRef>
+<attributeRef>0B48D1F2-AA76-3CC7-7FA8-D8655190E84E</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

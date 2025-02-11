@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E5DAFB1-78F6-8113-1C62-4C1DB119DAE7" name="Plato_Ingrediente">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35394ED3-FE44-0057-43E4-7C56A20D6822" name="Notificacion_Reserva">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:13:45 UTC</createdTime>
+<createdTime>2024-11-01 04:35:35 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Plato_Ingrediente_ID" id="180474A4-FA5E-EEC1-B4AC-4ECCC524EF35">
+<Attribute name="Notificacion_Reserva" id="14444BA9-05EF-56EB-1208-EC80284B2BB6">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:28 UTC</createdTime>
+<createdTime>2024-11-01 04:35:47 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,58 +27,69 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Plato_ID" id="9C901D8B-6D1F-5B84-9111-844D5022601F">
+<Attribute name="Fecha_Hora_Notific" id="B0AC8AE9-4278-D802-DF61-22E77096691E">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:27:41 UTC</createdTime>
-<generatorID>5DB42878-7EAC-EC20-A52F-09CC2789D705</generatorID>
+<createdTime>2024-11-01 04:35:53 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<referedAttribute>CA139AEC-5107-59BA-C924-FD7A7642A370</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado_Notific" id="B04B5E8B-31CC-7DC9-9FDF-3A7960FF3C50">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:36:05 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Reserva_ID" id="E12A0A25-7C7D-49F2-57BA-7ABE289023F0">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:36:39 UTC</createdTime>
+<generatorID>56C6301D-5F06-4142-93D2-D1E25B6A4E73</generatorID>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<referedAttribute>BF519574-0E88-8941-8D86-3DC9E90B8264</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Ingrediente_ID" id="F53450F7-8176-AFD9-6EC9-EEB95B01E95D">
+<Attribute name="Recordatorio" id="9489CBEB-71D5-9C77-4A4C-C0919AC71698">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:28:36 UTC</createdTime>
-<generatorID>F0185532-CD41-E48F-7BC7-9C0B0B4F780B</generatorID>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<referedAttribute>746BBD95-C2AA-5561-60E7-F64D9F6A27E0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Cantidad" id="33889FCE-27B2-E08E-CE19-3A47AB2CDCB5">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:07 UTC</createdTime>
+<createdTime>2024-11-01 04:37:40 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8D8260BD-2BDE-7DA8-58F4-D8338BF7B5EB" name="Plato_Ingrediente PK">
+<identifier id="85B9C7EB-4289-5CD1-BF79-6E405ADEC4D5" name="Notificacion_Reserva PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:37 UTC</createdTime>
+<createdTime>2024-11-01 04:35:52 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>180474A4-FA5E-EEC1-B4AC-4ECCC524EF35</attributeRef>
+<attributeRef>14444BA9-05EF-56EB-1208-EC80284B2BB6</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

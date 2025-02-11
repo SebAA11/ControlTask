@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E5DAFB1-78F6-8113-1C62-4C1DB119DAE7" name="Plato_Ingrediente">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="65B3C11F-BCC3-7FD2-85CE-D14F2AB2DD3E" name="Mesa">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:13:45 UTC</createdTime>
+<createdTime>2024-10-31 21:01:12 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Plato_Ingrediente_ID" id="180474A4-FA5E-EEC1-B4AC-4ECCC524EF35">
+<Attribute name="Mesa_ID" id="1B501A2E-6675-0F59-14D8-6A0B338608F8">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:28 UTC</createdTime>
+<createdTime>2024-10-31 21:01:20 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,37 +27,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Plato_ID" id="9C901D8B-6D1F-5B84-9111-844D5022601F">
+<Attribute name="Num" id="3AA6EEC2-8711-66B6-1DDA-3AFAAC05CF76">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:27:41 UTC</createdTime>
-<generatorID>5DB42878-7EAC-EC20-A52F-09CC2789D705</generatorID>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<referedAttribute>CA139AEC-5107-59BA-C924-FD7A7642A370</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Ingrediente_ID" id="F53450F7-8176-AFD9-6EC9-EEB95B01E95D">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:28:36 UTC</createdTime>
-<generatorID>F0185532-CD41-E48F-7BC7-9C0B0B4F780B</generatorID>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<referedAttribute>746BBD95-C2AA-5561-60E7-F64D9F6A27E0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Cantidad" id="33889FCE-27B2-E08E-CE19-3A47AB2CDCB5">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:07 UTC</createdTime>
+<createdTime>2024-10-31 21:12:49 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -67,18 +39,44 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Capacidad" id="B286B3C5-0078-AEBA-A9B1-33310A9B76F0">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-31 21:13:01 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Disponibilidad_Mesa_ID" id="48A7B613-57F2-2A40-05C9-543050657FB1">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-07 04:04:12 UTC</createdTime>
+<generatorID>A7CCF711-38AD-B484-6CED-BB1A7BF04766</generatorID>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<referedAttribute>34763966-CB56-8F06-9AE7-05E2EEE3B936</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8D8260BD-2BDE-7DA8-58F4-D8338BF7B5EB" name="Plato_Ingrediente PK">
+<identifier id="D152D6F2-CD74-8946-D158-C50E99BA5086" name="Mesa PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:37 UTC</createdTime>
+<createdTime>2024-10-31 21:01:26 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>180474A4-FA5E-EEC1-B4AC-4ECCC524EF35</attributeRef>
+<attributeRef>1B501A2E-6675-0F59-14D8-6A0B338608F8</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

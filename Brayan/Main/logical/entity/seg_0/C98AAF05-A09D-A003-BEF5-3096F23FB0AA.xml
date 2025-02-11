@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2E5DAFB1-78F6-8113-1C62-4C1DB119DAE7" name="Plato_Ingrediente">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C98AAF05-A09D-A003-BEF5-3096F23FB0AA" name="Descuento">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:13:45 UTC</createdTime>
+<createdTime>2024-11-01 04:45:36 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Plato_Ingrediente_ID" id="180474A4-FA5E-EEC1-B4AC-4ECCC524EF35">
+<Attribute name="Descuento_ID" id="71430B60-C3FD-7E0A-8FD8-2C576884D804">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:28 UTC</createdTime>
+<createdTime>2024-11-01 04:45:42 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,58 +27,69 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Plato_ID" id="9C901D8B-6D1F-5B84-9111-844D5022601F">
+<Attribute name="Fecha_Emision" id="8A6A98B9-F8EA-29F8-2BF0-4F586A09DFCC">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:27:41 UTC</createdTime>
-<generatorID>5DB42878-7EAC-EC20-A52F-09CC2789D705</generatorID>
+<createdTime>2024-11-01 04:45:55 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<referedAttribute>CA139AEC-5107-59BA-C924-FD7A7642A370</referedAttribute>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha_Expiracion" id="5A92B6AC-9283-CB96-3D39-B6C6E6AA456A">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:46:13 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="E1213963-A09B-56DC-8D2C-B92B57B16E4E">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:46:34 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Historial_Pedido_ID" id="0B1C5A36-67C0-C4FD-DFA8-0F5219CA9360">
+<createdBy>brian</createdBy>
+<createdTime>2024-11-01 04:52:23 UTC</createdTime>
+<generatorID>099EE571-968B-AB3F-918C-7248EF128B66</generatorID>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<referedAttribute>A19D68D7-D275-7E1A-D9F3-F2F63280441D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Ingrediente_ID" id="F53450F7-8176-AFD9-6EC9-EEB95B01E95D">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:28:36 UTC</createdTime>
-<generatorID>F0185532-CD41-E48F-7BC7-9C0B0B4F780B</generatorID>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<referedAttribute>746BBD95-C2AA-5561-60E7-F64D9F6A27E0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Cantidad" id="33889FCE-27B2-E08E-CE19-3A47AB2CDCB5">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:07 UTC</createdTime>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="8D8260BD-2BDE-7DA8-58F4-D8338BF7B5EB" name="Plato_Ingrediente PK">
+<identifier id="42E899BA-9C3C-CE1F-6290-A51258618C19" name="Descuento PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:29:37 UTC</createdTime>
+<createdTime>2024-11-01 04:45:54 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>180474A4-FA5E-EEC1-B4AC-4ECCC524EF35</attributeRef>
+<attributeRef>71430B60-C3FD-7E0A-8FD8-2C576884D804</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

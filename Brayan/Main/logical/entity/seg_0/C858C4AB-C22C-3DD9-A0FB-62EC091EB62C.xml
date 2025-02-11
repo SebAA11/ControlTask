@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA34B184-3F3C-5C88-CA89-9CC94A8C89D9" name="Disponibilidad">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C858C4AB-C22C-3DD9-A0FB-62EC091EB62C" name="Detalle_Pedido">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:06:36 UTC</createdTime>
+<createdTime>2024-10-31 21:03:52 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,43 +15,28 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Disponibilidad_ID" id="D455E832-9B86-013B-645B-1DB5BC0F1890">
+<Attribute name="Detalle_Pedido_ID" id="F4689E26-1099-CC41-1269-3F6871565908">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:41 UTC</createdTime>
+<createdTime>2024-10-31 21:04:14 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<use>0</use>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Estado" id="AC8DBFB2-3C9C-5F21-C52C-1AFDD8B535F5">
-<createdBy>brian</createdBy>
-<createdTime>2024-10-31 21:16:13 UTC</createdTime>
-<ownerDesignName>Main</ownerDesignName>
-<engineerTo>
-<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="B0B4A0E1-547C-0B3B-3D9B-35F531EBF382" name="Disponibilidad PK">
+<identifier id="3826014D-E81F-9B34-A7B3-94F9E2D64188" name="Detalle_Pedido PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:59 UTC</createdTime>
+<createdTime>2024-10-31 21:12:05 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D455E832-9B86-013B-645B-1DB5BC0F1890</attributeRef>
+<attributeRef>F4689E26-1099-CC41-1269-3F6871565908</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

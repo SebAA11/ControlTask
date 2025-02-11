@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA34B184-3F3C-5C88-CA89-9CC94A8C89D9" name="Disponibilidad">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E8AB34C-7E84-07C4-95E4-24E738ACA8FA" name="Historial_Pedido">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:06:36 UTC</createdTime>
+<createdTime>2024-11-01 04:49:46 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Disponibilidad_ID" id="D455E832-9B86-013B-645B-1DB5BC0F1890">
+<Attribute name="Historial_Pedido_ID" id="A19D68D7-D275-7E1A-D9F3-F2F63280441D">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:41 UTC</createdTime>
+<createdTime>2024-11-01 04:49:58 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,31 +27,32 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Estado" id="AC8DBFB2-3C9C-5F21-C52C-1AFDD8B535F5">
+<Attribute name="Cliente_ID" id="F687235A-F913-707F-0E32-2922FFC20B28">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 21:16:13 UTC</createdTime>
+<createdTime>2024-11-06 20:16:58 UTC</createdTime>
+<generatorID>C506C64B-C3E1-4868-F97E-0265E2EE50E0</generatorID>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
+<referedAttribute>225519E8-C536-3958-FD15-73B6EAE8BB75</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="B0B4A0E1-547C-0B3B-3D9B-35F531EBF382" name="Disponibilidad PK">
+<identifier id="0936E097-9EF4-BDC7-C425-321D0BFC8CFB" name="Historial_Pedido PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:59 UTC</createdTime>
+<createdTime>2024-11-01 04:50:10 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D455E832-9B86-013B-645B-1DB5BC0F1890</attributeRef>
+<attributeRef>A19D68D7-D275-7E1A-D9F3-F2F63280441D</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

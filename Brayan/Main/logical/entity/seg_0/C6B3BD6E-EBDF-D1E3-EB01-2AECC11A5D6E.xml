@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA34B184-3F3C-5C88-CA89-9CC94A8C89D9" name="Disponibilidad">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C6B3BD6E-EBDF-D1E3-EB01-2AECC11A5D6E" name="Tipo_Plato">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:06:36 UTC</createdTime>
+<createdTime>2024-11-06 20:07:01 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Disponibilidad_ID" id="D455E832-9B86-013B-645B-1DB5BC0F1890">
+<Attribute name="Tipo_Plato_ID" id="6F165FCA-9CB0-B890-C4AA-C99378737ABF">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:41 UTC</createdTime>
+<createdTime>2024-11-06 20:07:08 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,31 +27,31 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Estado" id="AC8DBFB2-3C9C-5F21-C52C-1AFDD8B535F5">
+<Attribute name="Descripcion" id="889771AC-EF41-3AA6-0AA9-DE09482E0B8D">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 21:16:13 UTC</createdTime>
+<createdTime>2024-11-06 20:09:19 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="B0B4A0E1-547C-0B3B-3D9B-35F531EBF382" name="Disponibilidad PK">
+<identifier id="190BD081-6400-6EEF-CC14-BD3D57E0FD79" name="Tipo_Plato PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:59 UTC</createdTime>
+<createdTime>2024-11-06 20:09:18 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D455E832-9B86-013B-645B-1DB5BC0F1890</attributeRef>
+<attributeRef>6F165FCA-9CB0-B890-C4AA-C99378737ABF</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

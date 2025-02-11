@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79DEC263-D76E-1EA6-CC79-1942C579449F" name="Entrada">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8EE069AD-D0D7-B3C6-B488-4FD9040C05AF" name="Cliente">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 03:37:15 UTC</createdTime>
+<createdTime>2024-10-31 21:00:19 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -11,13 +11,14 @@
 <fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
 <growthPercent>0</growthPercent>
 <growthType>Year</growthType>
+<hierarchicalParent>107EBFAA-DE0D-4675-679D-2BB5B57E098F</hierarchicalParent>
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Entrada_ID" id="91AD34A6-4AA6-2C83-3C4F-64141619F975">
+<Attribute name="Cliente_ID" id="225519E8-C536-3958-FD15-73B6EAE8BB75">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 03:37:32 UTC</createdTime>
+<createdTime>2024-10-31 21:00:27 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,9 +28,9 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Tip_Entrada" id="DF469E07-2AF5-A23F-DA5E-70DEBE148586">
+<Attribute name="Correo" id="AAAB510F-1DA1-B7EE-219C-BC67C9D4A45D">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 03:37:43 UTC</createdTime>
+<createdTime>2024-10-31 21:14:00 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -40,18 +41,30 @@
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Num_Contac" id="CBAC9BB2-3722-D2F3-8AD0-50380026C3E1">
+<createdBy>brian</createdBy>
+<createdTime>2024-10-31 21:14:10 UTC</createdTime>
+<ownerDesignName>Main</ownerDesignName>
+<engineerTo>
+<item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="7F27F1E5-C58E-71A9-5B5F-70B931D2F427" name="Entrada PK">
+<identifier id="454DD3BF-2A15-1F3B-620A-537D16D416E5" name="Cliente PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 03:37:48 UTC</createdTime>
+<createdTime>2024-10-31 21:00:34 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>91AD34A6-4AA6-2C83-3C4F-64141619F975</attributeRef>
+<attributeRef>225519E8-C536-3958-FD15-73B6EAE8BB75</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

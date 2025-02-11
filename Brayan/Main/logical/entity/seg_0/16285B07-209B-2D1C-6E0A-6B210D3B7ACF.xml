@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4B4A124B-EED4-EC65-2FDF-7BF919871725" name="Plato">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="16285B07-209B-2D1C-6E0A-6B210D3B7ACF" name="Reserva">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:14:30 UTC</createdTime>
+<createdTime>2024-11-01 04:29:02 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Plato_ID" id="CA139AEC-5107-59BA-C924-FD7A7642A370">
+<Attribute name="Reserva_ID" id="BF519574-0E88-8941-8D86-3DC9E90B8264">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:17:59 UTC</createdTime>
+<createdTime>2024-11-01 04:29:08 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,21 +27,21 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Precio" id="ED7D9848-654D-4D0E-9CA2-1E3784F44A1B">
+<Attribute name="Fecha_Hora_Reserva" id="51EB00E9-DA54-271D-910F-F59402EF19F4">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:18:12 UTC</createdTime>
+<createdTime>2024-11-01 04:29:20 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Descripcion" id="F83FA200-A804-828E-A7ED-581E2B6DA24C">
+<Attribute name="Origen" id="186542BE-E8FD-4EB7-9463-D85720D95FA6">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:25:16 UTC</createdTime>
+<createdTime>2024-11-01 04:30:22 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -49,45 +49,44 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>50</dataTypeSize>
-<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Menu_ID" id="1DF9C35E-F1BF-AAAB-6113-F3E8BCED320F">
+<Attribute name="Fecha_Hora_Confirmacion" id="9CE79435-600A-6C37-0AFF-59C938477C0B">
 <createdBy>brian</createdBy>
-<createdTime>2024-11-06 19:49:01 UTC</createdTime>
-<generatorID>1DE05DAB-4341-3B9B-B6D6-2F50C9BCCA91</generatorID>
+<createdTime>2024-11-01 04:31:01 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<referedAttribute>4E7D1A29-4E55-0E7A-DB61-5151BA35363D</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Tipo_Plato_ID" id="4FA3ACC8-0646-09A1-2E5F-AC0E2DA237EF">
+<Attribute name="Estado_Reserva_ID" id="22855FA5-FED5-1D65-435F-392B7D1F2038">
 <createdBy>brian</createdBy>
-<createdTime>2024-11-06 20:11:29 UTC</createdTime>
-<generatorID>8620ECB9-8026-E021-D4FF-84CEBCC14CCB</generatorID>
+<createdTime>2024-11-01 04:33:57 UTC</createdTime>
+<generatorID>F7EDD1CD-686A-F0DB-829C-2252012AF3C4</generatorID>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<referedAttribute>6F165FCA-9CB0-B890-C4AA-C99378737ABF</referedAttribute>
+<referedAttribute>35E96295-B720-7BAC-97A5-FB1B5BFC0243</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Disponibilidad_ID" id="A962AFB1-57E6-E1F6-C25E-CCBE13B8DE66">
+<Attribute name="Cliente_ID" id="9C23ACE9-91D4-363D-61D5-94FCA0551B19">
 <createdBy>brian</createdBy>
-<createdTime>2024-11-07 04:05:20 UTC</createdTime>
-<generatorID>7CDBDAAC-BCC1-5715-B3EC-290B73410AD9</generatorID>
+<createdTime>2024-11-07 03:26:02 UTC</createdTime>
+<generatorID>B5DA6F76-FC62-4A31-209C-681820F8DA9D</generatorID>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
-<referedAttribute>D455E832-9B86-013B-645B-1DB5BC0F1890</referedAttribute>
+<referedAttribute>225519E8-C536-3958-FD15-73B6EAE8BB75</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -95,16 +94,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="76FC0E4B-A316-D419-9437-4246B92E1917" name="Plato PK">
+<identifier id="F26B3578-FCAF-40D5-95AC-E45BA2F98CBC" name="Reserva PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:18:08 UTC</createdTime>
+<createdTime>2024-11-01 04:29:18 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>CA139AEC-5107-59BA-C924-FD7A7642A370</attributeRef>
+<attributeRef>BF519574-0E88-8941-8D86-3DC9E90B8264</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

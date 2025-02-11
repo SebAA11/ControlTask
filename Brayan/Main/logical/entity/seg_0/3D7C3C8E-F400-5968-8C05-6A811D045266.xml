@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA34B184-3F3C-5C88-CA89-9CC94A8C89D9" name="Disponibilidad">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3D7C3C8E-F400-5968-8C05-6A811D045266" name="Disponibilidad_Mesa">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:06:36 UTC</createdTime>
+<createdTime>2024-11-07 04:01:07 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Disponibilidad_ID" id="D455E832-9B86-013B-645B-1DB5BC0F1890">
+<Attribute name="Disponibilidad_Mesa_ID" id="34763966-CB56-8F06-9AE7-05E2EEE3B936">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:41 UTC</createdTime>
+<createdTime>2024-11-07 04:01:16 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
@@ -27,31 +27,29 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Estado" id="AC8DBFB2-3C9C-5F21-C52C-1AFDD8B535F5">
+<Attribute name="Estado" id="95F7DC4C-7D55-A552-3E8B-3137A2ED3A9C">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 21:16:13 UTC</createdTime>
+<createdTime>2024-11-07 04:03:50 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<dataTypeSize>2</dataTypeSize>
-<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="B0B4A0E1-547C-0B3B-3D9B-35F531EBF382" name="Disponibilidad PK">
+<identifier id="C436B791-AAEB-FB64-DA75-1C8B1B4700B8" name="Disponibilidad_Mesa PK">
 <createdBy>brian</createdBy>
-<createdTime>2024-10-31 02:31:59 UTC</createdTime>
+<createdTime>2024-11-07 04:03:49 UTC</createdTime>
 <ownerDesignName>Main</ownerDesignName>
 <engineerTo>
 <item key="2E22A981-63B5-9883-3F71-D446A645006A" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>D455E832-9B86-013B-645B-1DB5BC0F1890</attributeRef>
+<attributeRef>34763966-CB56-8F06-9AE7-05E2EEE3B936</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>
