@@ -111,7 +111,7 @@ public class JFInicioSesionP extends javax.swing.JFrame {
 
         bSalir.setBackground(new java.awt.Color(255, 106, 101));
         bSalir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        bSalir.setForeground(new java.awt.Color(253, 0, 0));
+        bSalir.setForeground(new java.awt.Color(204, 0, 0));
         bSalir.setText("Salir");
         bSalir.setBorder(null);
         bSalir.addActionListener(new java.awt.event.ActionListener() {
