@@ -1,4 +1,4 @@
-  package modelo;
+/**  package modelo;
 
 public class FormularioDatos {
 
@@ -31,3 +31,4 @@ public class FormularioDatos {
                 + "Detalle de Tarea:\n" + detalleTarea;
     }
 }
+*/
