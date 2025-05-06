@@ -1,4 +1,4 @@
-package principal;
+package controlador;
 
 import vista.JFInicioSesionP;
 

@@ -10,7 +10,7 @@ import vista.JFMenuTareas;
 
 public class CLogin {
     
-    public void validaUsuario(JTextField usuario, JPasswordField contraseña){
+    public void validaUsuario(JTextField usuario, JPasswordField contraseña, javax.swing.JFrame loginFrame){
     
         try {
             ResultSet rs=null; 
@@ -30,9 +30,11 @@ public class CLogin {
             
             if (rs.next()){
                 
+                String nombreUsuario = rs.getString("ingresoUsuario");
                 JOptionPane.showMessageDialog(null, "El usuario es correcto");
-                JFMenuTareas objetoMenu = new JFMenuTareas();
+                JFMenuTareas objetoMenu = new JFMenuTareas(nombreUsuario);
                 objetoMenu.setVisible(true);
+                loginFrame.dispose();  
                 
 
             }else{

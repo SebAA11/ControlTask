@@ -1,19 +1,21 @@
 package vista;
 
 import controlador.ControladorJFMenuTareas;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.event.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class JFMenuTareas extends JFrame {
+public class JFMenuTareasCOPIA extends JFrame {
     controlador.ControladorJFMenuTareas ControladorJFMenuTareas= new ControladorJFMenuTareas();
     
-        public JFMenuTareas() {
+        public JFMenuTareasCOPIA() {
         initComponents();
        
     }
-    public JFMenuTareas(String nombreUsuario) {
+    public JFMenuTareasCOPIA(String nombreUsuario) {
         initComponents();
         jLabelNombreUsuario.setText("Bienvenido, " + nombreUsuario);
         
@@ -36,85 +38,7 @@ public class JFMenuTareas extends JFrame {
     addHoverEffect(bUsuario, colorDefault, colorHover, "/Imagenes/usuario.png", "/Imagenes/usuarioHover.png");
     addHoverEffect(bSalir6, colorSalir, colorSalir, "/Imagenes/salir.png", "/Imagenes/salirHover.png");
     }
-    
-public void agregarTicketVisual(JPanel contenedor, String titulo, String estado, String responsable, String descripcion, String categoria) {
-    JPanel ticket = new JPanel();
-    ticket.setLayout(new BoxLayout(ticket, BoxLayout.Y_AXIS));
-    ticket.setBorder(BorderFactory.createLineBorder(Color.GRAY));
-    ticket.setBackground(Color.WHITE);
-    ticket.setAlignmentX(Component.LEFT_ALIGNMENT);
-    ticket.setMaximumSize(new Dimension(1080, 100)); // Ajusta según tu diseño
 
-    JLabel lblTitulo = new JLabel("📎 Titulo: " + titulo);
-    JLabel lblDetalles = new JLabel("📂 Categoria: " + categoria + "  ||  👤  Responsable: " + responsable + "  ||  💹  Estado: " + estado);
-    JLabel lblExtra = new JLabel("📃 Descripcion: " + descripcion);
-
-    // Panel para los botones
-    JPanel panelBotones = new JPanel(new FlowLayout(FlowLayout.LEFT));
-    JButton BMover = new JButton("Mover a...");
-    JButton BEliminar = new JButton("Eliminar");
-
-    // Funcionalidad para botón MOVER
-    BMover.addActionListener(e -> {
-        String[] opciones = {"Abierto", "En progreso", "Cerrado"};
-        String nuevoEstado = (String) JOptionPane.showInputDialog(
-            null,
-            "Seleccione el nuevo estado:",
-            "Mover ticket",
-            JOptionPane.QUESTION_MESSAGE,
-            null,
-            opciones,
-            estado
-        );
-
-        if (nuevoEstado != null && !nuevoEstado.equals(estado)) {
-            contenedor.remove(ticket); // Elimina del panel actual
-
-            // Agrega al nuevo panel según el estado
-            if (nuevoEstado.equals("Abierto")) {
-                agregarTicketVisual(JPanelAbierto, titulo, nuevoEstado, responsable, descripcion, categoria);
-            } else if (nuevoEstado.equals("En progreso")) {
-                agregarTicketVisual(JPanelProgreso, titulo, nuevoEstado, responsable, descripcion, categoria);
-            } else if (nuevoEstado.equals("Cerrado")) {
-                agregarTicketVisual(JPanelCerrado, titulo, nuevoEstado, responsable, descripcion, categoria);
-            }
-
-            contenedor.revalidate();
-            contenedor.repaint();
-        }
-    });
-
-    // Funcionalidad para botón ELIMINAR
-    BEliminar.addActionListener(e -> {
-        int confirm = JOptionPane.showConfirmDialog(
-            null,
-            "¿Está seguro de eliminar este ticket?",
-            "Confirmar eliminación",
-            JOptionPane.YES_NO_OPTION
-        );
-        if (confirm == JOptionPane.YES_OPTION) {
-            contenedor.remove(ticket);
-            contenedor.revalidate();
-            contenedor.repaint();
-        }
-    });
-
-    // Agrega los botones al panel de botones
-    panelBotones.add(BMover);
-    panelBotones.add(BEliminar);
-
-    // Agrega los componentes al ticket
-    ticket.add(lblTitulo);
-    ticket.add(lblDetalles);
-    ticket.add(lblExtra);
-    ticket.add(panelBotones);
-
-    // Agrega el ticket al contenedor
-    contenedor.add(ticket);
-    contenedor.revalidate();
-    contenedor.repaint();
-
-}
     // Método para agregar el efecto hover a los botones
 private void addHoverEffect(JButton button, Color colorDefault, Color colorHover, String iconDefault, String iconHover) {
     button.addMouseListener(new MouseAdapter() {
@@ -135,7 +59,6 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
      
               
     });
-    
 }
   
 
@@ -163,30 +86,28 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         jSeparator1 = new javax.swing.JSeparator();
         jLabelNombreUsuario = new javax.swing.JLabel();
         bSalir = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         JPanelForms = new javax.swing.JPanel();
         JPanelCrearT = new javax.swing.JPanel();
-        jSeparator2 = new javax.swing.JSeparator();
         jLabel = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tDescripcion = new javax.swing.JTextArea();
         jLabel8 = new javax.swing.JLabel();
-        cCategoria = new javax.swing.JComboBox<>();
+        cComplejidad = new javax.swing.JComboBox<>();
         jLabel9 = new javax.swing.JLabel();
         cEstado = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
         cResponsable = new javax.swing.JComboBox<>();
         bCrear = new javax.swing.JButton();
         tTitulo = new javax.swing.JTextField();
+        jSeparator2 = new javax.swing.JSeparator();
         JPanelTicket = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        JTableMenu = new javax.swing.JTable();
+        BMover = new javax.swing.JButton();
+        BEliminar = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        JPanelPrincipalTickets = new javax.swing.JPanel();
-        JPanelAbierto = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        JPanelProgreso = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        JPanelCerrado = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
 
         jInternalFrame1.setVisible(true);
 
@@ -346,19 +267,19 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(76, Short.MAX_VALUE)
+                .addContainerGap(51, Short.MAX_VALUE)
                 .addComponent(jLabel10)
-                .addGap(76, 76, 76))
+                .addGap(51, 51, 51))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(145, Short.MAX_VALUE)
+                .addContainerGap(146, Short.MAX_VALUE)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(146, 146, 146))
+                .addGap(145, 145, 145))
         );
 
-        JPanelUsuario.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 410, 560));
+        JPanelUsuario.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, 360, 560));
 
         jPanel1.setBackground(new java.awt.Color(0, 212, 216));
         jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 2, 0, 0, new java.awt.Color(40, 44, 92)));
@@ -366,22 +287,22 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ControlTask.png"))); // NOI18N
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, -1, 152));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 17, -1, 152));
 
         jLabel2.setFont(new java.awt.Font("Nirmala UI", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(40, 44, 92));
         jLabel2.setText("Usuario:");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 260, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(219, 263, -1, -1));
 
         jSeparator1.setBackground(new java.awt.Color(0, 212, 216));
         jSeparator1.setForeground(new java.awt.Color(40, 44, 92));
         jSeparator1.setAlignmentX(1.0F);
         jSeparator1.setAlignmentY(1.0F);
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, 325, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 343, 325, 10));
 
         jLabelNombreUsuario.setFont(new java.awt.Font("Nirmala UI", 0, 15)); // NOI18N
         jLabelNombreUsuario.setForeground(new java.awt.Color(40, 44, 92));
-        jPanel1.add(jLabelNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 230, 25));
+        jPanel1.add(jLabelNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 306, 194, 25));
 
         bSalir.setBackground(new java.awt.Color(255, 106, 101));
         bSalir.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
@@ -394,9 +315,13 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
                 bSalirActionPerformed(evt);
             }
         });
-        jPanel1.add(bSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 420, 110, 30));
+        jPanel1.add(bSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, 110, 30));
 
-        JPanelUsuario.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, 440, 560));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cerrarSesion.png"))); // NOI18N
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, -1, 40));
+
+        JPanelUsuario.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 490, 560));
 
         jPanelCard.add(JPanelUsuario, "card3");
 
@@ -409,23 +334,15 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         JPanelCrearT.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 2, 0, 0, new java.awt.Color(40, 44, 92)));
         JPanelCrearT.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
-        jSeparator2.setForeground(new java.awt.Color(40, 44, 92));
-        jSeparator2.setAlignmentX(1.0F);
-        jSeparator2.setAlignmentY(1.0F);
-        JPanelCrearT.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 790, 20));
-
         jLabel.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Titulo.png"))); // NOI18N
         jLabel.setText("Titulo:");
-        JPanelCrearT.add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, -1, -1));
+        JPanelCrearT.add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 140, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Descripcion.png"))); // NOI18N
         jLabel12.setText("Descripción:");
-        JPanelCrearT.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, -1, -1));
+        JPanelCrearT.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, -1, -1));
 
         tDescripcion.setBackground(new java.awt.Color(255, 255, 255));
         tDescripcion.setColumns(20);
@@ -441,34 +358,32 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
 
         jLabel8.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Categoria.png"))); // NOI18N
         jLabel8.setText("Categoria:");
-        JPanelCrearT.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 200, -1, -1));
+        JPanelCrearT.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, -1, -1));
 
-        cCategoria.setBackground(new java.awt.Color(255, 255, 255));
-        cCategoria.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
-        cCategoria.setForeground(new java.awt.Color(40, 44, 92));
-        cCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Bajo", "Medio", "Alto" }));
-        cCategoria.setToolTipText("EL GRADO DE COMPLEJIDAD CONSIDERADO PARA SU TAREA");
-        cCategoria.setBorder(null);
-        cCategoria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        cCategoria.addActionListener(new java.awt.event.ActionListener() {
+        cComplejidad.setBackground(new java.awt.Color(255, 255, 255));
+        cComplejidad.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
+        cComplejidad.setForeground(new java.awt.Color(40, 44, 92));
+        cComplejidad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Bajo", "Medio", "Alto" }));
+        cComplejidad.setToolTipText("EL GRADO DE COMPLEJIDAD CONSIDERADO PARA SU TAREA");
+        cComplejidad.setBorder(null);
+        cComplejidad.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        cComplejidad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cCategoriaActionPerformed(evt);
+                cComplejidadActionPerformed(evt);
             }
         });
-        JPanelCrearT.add(cCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 790, -1));
+        JPanelCrearT.add(cComplejidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 200, 790, -1));
 
         jLabel9.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Estado.png"))); // NOI18N
         jLabel9.setText("Estado:");
-        JPanelCrearT.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, -1, -1));
+        JPanelCrearT.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, -1, -1));
 
         cEstado.setBackground(new java.awt.Color(255, 255, 255));
         cEstado.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         cEstado.setForeground(new java.awt.Color(40, 44, 92));
-        cEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Abierto", "En progreso", "Cerrado" }));
+        cEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione:", "Abierto", "En proceso", "Cerrado" }));
         cEstado.setToolTipText("ESTADO INICIAL DE SU TAREA");
         cEstado.setBorder(null);
         cEstado.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -481,14 +396,13 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
 
         jLabel11.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Responsable.png"))); // NOI18N
         jLabel11.setText("Asignado a:");
-        JPanelCrearT.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, -1, 30));
+        JPanelCrearT.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, 20));
 
         cResponsable.setBackground(new java.awt.Color(255, 255, 255));
         cResponsable.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         cResponsable.setForeground(new java.awt.Color(40, 44, 92));
-        cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Responsable 1", "Responsable 2", " " }));
+        cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione:", "Responsable 1", "Responsable 2" }));
         cResponsable.setToolTipText("RESPONSABLE");
         cResponsable.setBorder(null);
         cResponsable.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -510,7 +424,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
                 bCrearActionPerformed(evt);
             }
         });
-        JPanelCrearT.add(bCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 670, 120, 30));
+        JPanelCrearT.add(bCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 670, 120, 30));
 
         tTitulo.setBackground(new java.awt.Color(255, 255, 255));
         tTitulo.setFont(new java.awt.Font("Nirmala UI", 0, 15)); // NOI18N
@@ -523,58 +437,81 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         });
         JPanelCrearT.add(tTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 130, 790, 30));
 
+        jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
+        jSeparator2.setForeground(new java.awt.Color(40, 44, 92));
+        jSeparator2.setAlignmentX(1.0F);
+        jSeparator2.setAlignmentY(1.0F);
+        JPanelCrearT.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 790, 20));
+
         jPanelCard.add(JPanelCrearT, "card4");
 
         JPanelTicket.setBackground(new java.awt.Color(255, 255, 255));
         JPanelTicket.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 2, 0, 0, new java.awt.Color(40, 44, 92)));
         JPanelTicket.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
-        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        jScrollPane2.setRowHeaderView(null);
-        jScrollPane2.setViewportView(JPanelPrincipalTickets);
+        JTableMenu.setBackground(new java.awt.Color(255, 255, 255));
+        JTableMenu.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
 
-        JPanelPrincipalTickets.setBackground(new java.awt.Color(255, 255, 255));
-        JPanelPrincipalTickets.setForeground(new java.awt.Color(255, 255, 255));
-        JPanelPrincipalTickets.setLayout(new javax.swing.BoxLayout(JPanelPrincipalTickets, javax.swing.BoxLayout.Y_AXIS));
+            },
+            new String [] {
+                "Abierto", "En proceso", "Cerrado"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false
+            };
 
-        JPanelAbierto.setBackground(new java.awt.Color(0, 212, 216));
-        JPanelAbierto.setLayout(new javax.swing.BoxLayout(JPanelAbierto, javax.swing.BoxLayout.Y_AXIS));
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        JTableMenu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        JTableMenu.addAncestorListener(new javax.swing.event.AncestorListener() {
+            public void ancestorAdded(javax.swing.event.AncestorEvent evt) {
+                JTableMenuAncestorAdded(evt);
+            }
+            public void ancestorMoved(javax.swing.event.AncestorEvent evt) {
+                JTableMenuAncestorMoved(evt);
+            }
+            public void ancestorRemoved(javax.swing.event.AncestorEvent evt) {
+            }
+        });
+        JTableMenu.addVetoableChangeListener(new java.beans.VetoableChangeListener() {
+            public void vetoableChange(java.beans.PropertyChangeEvent evt)throws java.beans.PropertyVetoException {
+                JTableMenuVetoableChange(evt);
+            }
+        });
+        jScrollPane1.setViewportView(JTableMenu);
 
-        jLabel1.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel1.setText("● Abierto");
-        jLabel1.setMaximumSize(new java.awt.Dimension(1056, 21));
-        jLabel1.setPreferredSize(new java.awt.Dimension(66, 200));
-        JPanelAbierto.add(jLabel1);
+        JPanelTicket.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1050, 400));
 
-        JPanelPrincipalTickets.add(JPanelAbierto);
+        BMover.setBackground(new java.awt.Color(102, 204, 255));
+        BMover.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BMover.setForeground(new java.awt.Color(255, 255, 255));
+        BMover.setText("Mover Tarea");
+        BMover.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        BMover.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BMover.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BMoverActionPerformed(evt);
+            }
+        });
+        JPanelTicket.add(BMover, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 510, 100, 30));
 
-        JPanelProgreso.setBackground(new java.awt.Color(0, 212, 216));
-        JPanelProgreso.setLayout(new javax.swing.BoxLayout(JPanelProgreso, javax.swing.BoxLayout.Y_AXIS));
-
-        jLabel3.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel3.setText("● En progreso");
-        jLabel3.setMaximumSize(new java.awt.Dimension(1056, 21));
-        JPanelProgreso.add(jLabel3);
-
-        JPanelPrincipalTickets.add(JPanelProgreso);
-
-        JPanelCerrado.setBackground(new java.awt.Color(0, 212, 216));
-        JPanelCerrado.setLayout(new javax.swing.BoxLayout(JPanelCerrado, javax.swing.BoxLayout.Y_AXIS));
-
-        jLabel4.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(40, 44, 92));
-        jLabel4.setText("● Cerrado");
-        jLabel4.setMaximumSize(new java.awt.Dimension(1056, 21));
-        JPanelCerrado.add(jLabel4);
-
-        JPanelPrincipalTickets.add(JPanelCerrado);
-
-        jScrollPane2.setViewportView(JPanelPrincipalTickets);
-
-        JPanelTicket.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 1060, 760));
+        BEliminar.setBackground(new java.awt.Color(255, 0, 51));
+        BEliminar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        BEliminar.setForeground(new java.awt.Color(255, 255, 255));
+        BEliminar.setText("Eliminar");
+        BEliminar.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        BEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BEliminarActionPerformed(evt);
+            }
+        });
+        JPanelTicket.add(BEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 560, 100, 30));
+        JPanelTicket.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 490, 240, 220));
 
         jPanelCard.add(JPanelTicket, "card5");
 
@@ -639,48 +576,132 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
 
     private void bCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bCrearActionPerformed
         // TODO add your handling code here:
-if (tTitulo.getText().equals("") ||
-    tDescripcion.getText().equals("") ||
-    cCategoria.getSelectedItem().equals("Seleccione") ||
-    cEstado.getSelectedItem().equals("Seleccione") ||
-    cResponsable.getSelectedItem().equals("Seleccione")) {
+        if(tTitulo.getText().equals("")||tDescripcion.getText().equals("")||cComplejidad.getSelectedItem().equals("Seleccione")||cEstado.getSelectedItem().equals("Seleccione")||cResponsable.getSelectedItem().equals("Seleccione")){
+            JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios.");
+        }else{
+            String data = tTitulo.getText() + " - " + tDescripcion.getText() + " - " + cComplejidad.getSelectedItem() + " - " + cEstado.getSelectedItem() + " - " + cResponsable.getSelectedItem();
 
-    JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios.");
+            int columnIndex = 0; // Por defecto, "Por hacer"
+            String estado = cEstado.getSelectedItem().toString();
+            if (estado.equals("En progreso")) {
+                columnIndex = 1;
+            } else if (estado.equals("Terminado")) {
+                columnIndex = 2;
+            }
 
-} else {
-    String titulo = tTitulo.getText().trim();
-    String descripcion = tDescripcion.getText().trim();
-    String categoria = cCategoria.getSelectedItem().toString();
-    String estado = cEstado.getSelectedItem().toString();
-    String responsable = cResponsable.getSelectedItem().toString();
+            // Obtenemos el modelo de la tabla
+            DefaultTableModel tblModel = (DefaultTableModel) JTableMenu.getModel();
 
-    // Insertar visualmente en el panel correspondiente
-    if (estado.equalsIgnoreCase("Abierto")) {
-        agregarTicketVisual(JPanelAbierto, titulo, estado, responsable, descripcion, categoria);
-    } else if (estado.equalsIgnoreCase("En progreso")) {
-        agregarTicketVisual(JPanelProgreso, titulo, estado, responsable, descripcion, categoria);
-    } else if (estado.equalsIgnoreCase("Cerrado")) {
-        agregarTicketVisual(JPanelCerrado, titulo, estado, responsable, descripcion, categoria);
-    }
+            // Añadimos una nueva fila si no existe suficiente espacio en la tabla
+            if (tblModel.getRowCount() == 0 || tblModel.getRowCount() <= tblModel.getRowCount()) {
+                tblModel.addRow(new Object[]{"", "", ""}); // Agrega una fila vacía con tres columnas
+            }
 
-    JOptionPane.showMessageDialog(this, "Se creó la tarea exitosamente.");
+            // Asignamos el valor a la celda específica de la columna adecuada
+            tblModel.setValueAt(data, tblModel.getRowCount() - 1, columnIndex);
 
-    // Limpiar campos
-    tTitulo.setText("");
-    tDescripcion.setText("");
-    cCategoria.setSelectedIndex(0);
-    cEstado.setSelectedIndex(0);
-    cResponsable.setSelectedIndex(0);
-}
+            JOptionPane.showMessageDialog(this, "Se creó la tarea exitosamente.");
+
+            tTitulo.setText("");
+            tDescripcion.setText("");
+            cComplejidad.setSelectedItem("");
+            cEstado.setSelectedItem("");
+            cResponsable.setSelectedItem("");
+        }
     }//GEN-LAST:event_bCrearActionPerformed
+
+    private void JTableMenuAncestorAdded(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_JTableMenuAncestorAdded
+
+    }//GEN-LAST:event_JTableMenuAncestorAdded
+
+    private void JTableMenuAncestorMoved(javax.swing.event.AncestorEvent evt) {//GEN-FIRST:event_JTableMenuAncestorMoved
+        // TODO add your handling code here:
+
+        JTableMenu.getTableHeader().setReorderingAllowed(false);
+    }//GEN-LAST:event_JTableMenuAncestorMoved
+
+    private void JTableMenuVetoableChange(java.beans.PropertyChangeEvent evt)throws java.beans.PropertyVetoException {//GEN-FIRST:event_JTableMenuVetoableChange
+
+    }//GEN-LAST:event_JTableMenuVetoableChange
+
+    private void BMoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BMoverActionPerformed
+        // TODO add your handling code here:
+        DefaultTableModel tblModel = (DefaultTableModel) JTableMenu.getModel();
+        int selectedRow = JTableMenu.getSelectedRow();
+        int selectedColumn = JTableMenu.getSelectedColumn();
+
+        if (selectedRow == -1 || selectedColumn == -1 || JTableMenu.getValueAt(selectedRow, selectedColumn) == null) {
+            JOptionPane.showMessageDialog(null, "Seleccione una tarea para mover.");
+            return;
+        }
+        // Verificación de que la celda seleccionada contiene una tarea (no está vacía)
+        Object tareaObj = tblModel.getValueAt(selectedRow, selectedColumn);
+        if (tareaObj == null || tareaObj.toString().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "La celda seleccionada está vacía. Por favor, seleccione una tarea válida.");
+            return;
+        }
+
+        // Convertimos el objeto a String (si la celda no está vacía)
+        String tarea = tareaObj.toString();
+        String[] opciones = {"Por hacer", "En progreso", "Terminado"};
+
+        // Mostrar ventana de selección de columna
+        String nuevaColumna = (String) JOptionPane.showInputDialog(
+            null,
+            "Seleccione a qué columna mover la tarea:",
+            "Mover Tarea",
+            JOptionPane.QUESTION_MESSAGE,
+            null,
+            opciones,
+            opciones[selectedColumn]  // Columna actual como predeterminada
+        );
+
+        if (nuevaColumna == null) return;
+
+        int targetColumn = 0;
+        switch (nuevaColumna) {
+            case "En progreso":
+            targetColumn = 1;
+            break;
+            case "Terminado":
+            targetColumn = 2;
+            break;
+        }
+
+        if (selectedColumn != targetColumn) {
+            JTableMenu.setValueAt(null, selectedRow, selectedColumn);
+            JTableMenu.setValueAt(tarea, selectedRow, targetColumn);
+            JOptionPane.showMessageDialog(null, "La tarea ha sido movida exitosamente.");
+        } else {
+            JOptionPane.showMessageDialog(null, "La tarea ya está en la columna seleccionada.");
+        }
+    }//GEN-LAST:event_BMoverActionPerformed
+
+    private void BEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BEliminarActionPerformed
+        // TODO add your handling code here:
+        DefaultTableModel tblModel = (DefaultTableModel)  JTableMenu.getModel();
+
+        if(JTableMenu.getSelectedRowCount()==1){
+
+            tblModel.removeRow(JTableMenu.getSelectedRow());
+        }else{
+            if(JTableMenu.getRowCount()==0){
+
+                JOptionPane.showMessageDialog(this, "La tabla esta vacia.");
+            }else{
+                JOptionPane.showMessageDialog(this, "Porfavor selecciona la tarea a eliminar.");
+            }
+
+        }
+    }//GEN-LAST:event_BEliminarActionPerformed
 
     private void tTituloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tTituloActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_tTituloActionPerformed
 
-    private void cCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cCategoriaActionPerformed
+    private void cComplejidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cComplejidadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_cCategoriaActionPerformed
+    }//GEN-LAST:event_cComplejidadActionPerformed
 
     private void bSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bSalirActionPerformed
         // TODO add your handling code here:
@@ -712,21 +733,23 @@ if (tTitulo.getText().equals("") ||
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareasCOPIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareasCOPIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareasCOPIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareasCOPIA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFMenuTareas().setVisible(true);
+                new JFMenuTareasCOPIA().setVisible(true);
             }
         });
     }
@@ -734,15 +757,14 @@ if (tTitulo.getText().equals("") ||
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel JPanelAbierto;
-    private javax.swing.JPanel JPanelCerrado;
+    private javax.swing.JButton BEliminar;
+    private javax.swing.JButton BMover;
     private javax.swing.JPanel JPanelCrearT;
     private javax.swing.JPanel JPanelForms;
     public javax.swing.JPanel JPanelMenu;
-    private javax.swing.JPanel JPanelPrincipalTickets;
-    private javax.swing.JPanel JPanelProgreso;
     private javax.swing.JPanel JPanelTicket;
     private javax.swing.JPanel JPanelUsuario;
+    private javax.swing.JTable JTableMenu;
     public javax.swing.JButton bCrear;
     public javax.swing.JButton bCrearT;
     public javax.swing.JButton bForms;
@@ -750,18 +772,16 @@ if (tTitulo.getText().equals("") ||
     public javax.swing.JButton bSalir6;
     public javax.swing.JButton bTicket;
     public javax.swing.JButton bUsuario;
-    public javax.swing.JComboBox<String> cCategoria;
+    public javax.swing.JComboBox<String> cComplejidad;
     public javax.swing.JComboBox<String> cEstado;
     public javax.swing.JComboBox<String> cResponsable;
     private javax.swing.JInternalFrame jInternalFrame1;
     public javax.swing.JLabel jLabel;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     public javax.swing.JLabel jLabel11;
     public javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     public javax.swing.JLabel jLabel8;
@@ -772,6 +792,7 @@ if (tTitulo.getText().equals("") ||
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanelCard;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JSeparator jSeparator1;

@@ -1,3 +1,5 @@
+package controlador;
+
   /**package control;
 
 import javax.swing.*;
