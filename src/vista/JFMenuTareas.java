@@ -432,7 +432,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         tDescripcion.setFont(new java.awt.Font("Nirmala UI", 0, 15)); // NOI18N
         tDescripcion.setForeground(new java.awt.Color(40, 44, 92));
         tDescripcion.setRows(5);
-        tDescripcion.setToolTipText("DESCRIPCION DE SU TAREA");
+        tDescripcion.setToolTipText("Descripción breve de su ticket");
         tDescripcion.setBorder(null);
         tDescripcion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jScrollPane3.setViewportView(tDescripcion);
@@ -449,7 +449,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         cCategoria.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         cCategoria.setForeground(new java.awt.Color(40, 44, 92));
         cCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Falla de acceso a aplicativos", "Novedades técnicas", "Error en el agendamiento de la visita", "Cancelar orden de visita", "Modificar dirección de visita", "Cambio de estado de la orden", "Registrar números adicionales", "Reactivar orden del cliente" }));
-        cCategoria.setToolTipText("EL GRADO DE COMPLEJIDAD CONSIDERADO PARA SU TAREA");
+        cCategoria.setToolTipText("Seleccione la categoria de su ticket");
         cCategoria.setBorder(null);
         cCategoria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cCategoria.addActionListener(new java.awt.event.ActionListener() {
@@ -469,7 +469,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         cEstado.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         cEstado.setForeground(new java.awt.Color(40, 44, 92));
         cEstado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Abierto", "En progreso", "Cerrado" }));
-        cEstado.setToolTipText("ESTADO INICIAL DE SU TAREA");
+        cEstado.setToolTipText("Seleccione el estado inicial de su ticket");
         cEstado.setBorder(null);
         cEstado.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cEstado.addActionListener(new java.awt.event.ActionListener() {
@@ -489,7 +489,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         cResponsable.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         cResponsable.setForeground(new java.awt.Color(40, 44, 92));
         cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Responsable 1", "Responsable 2", "Responsable 3", "Responsable 4" }));
-        cResponsable.setToolTipText("RESPONSABLE");
+        cResponsable.setToolTipText("Seleccione el responsable del ticket");
         cResponsable.setBorder(null);
         cResponsable.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         cResponsable.addActionListener(new java.awt.event.ActionListener() {

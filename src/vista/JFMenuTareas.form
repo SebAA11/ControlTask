@@ -687,7 +687,7 @@
                           <Color blue="5c" green="2c" red="28" type="rgb"/>
                         </Property>
                         <Property name="rows" type="int" value="5"/>
-                        <Property name="toolTipText" type="java.lang.String" value="DESCRIPCION DE SU TAREA"/>
+                        <Property name="toolTipText" type="java.lang.String" value="Descripci&#xf3;n breve de su ticket"/>
                         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                           <Border info="null"/>
                         </Property>
@@ -744,7 +744,7 @@
                         <StringItem index="8" value="Reactivar orden del cliente"/>
                       </StringArray>
                     </Property>
-                    <Property name="toolTipText" type="java.lang.String" value="EL GRADO DE COMPLEJIDAD CONSIDERADO PARA SU TAREA"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Seleccione la categoria de su ticket"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
@@ -803,7 +803,7 @@
                         <StringItem index="3" value="Cerrado"/>
                       </StringArray>
                     </Property>
-                    <Property name="toolTipText" type="java.lang.String" value="ESTADO INICIAL DE SU TAREA"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Seleccione el estado inicial de su ticket"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
@@ -866,7 +866,7 @@
                         <StringItem index="4" value="Responsable 4"/>
                       </StringArray>
                     </Property>
-                    <Property name="toolTipText" type="java.lang.String" value="RESPONSABLE"/>
+                    <Property name="toolTipText" type="java.lang.String" value="Seleccione el responsable del ticket"/>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="null"/>
                     </Property>
