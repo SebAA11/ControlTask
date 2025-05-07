@@ -419,7 +419,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         jLabel.setForeground(new java.awt.Color(40, 44, 92));
         jLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Titulo.png"))); // NOI18N
         jLabel.setText("Titulo:");
-        JPanelCrearT.add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 140, -1, -1));
+        JPanelCrearT.add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(40, 44, 92));
@@ -437,7 +437,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         tDescripcion.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jScrollPane3.setViewportView(tDescripcion);
 
-        JPanelCrearT.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 420, 790, 190));
+        JPanelCrearT.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 420, 800, 190));
 
         jLabel8.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(40, 44, 92));
