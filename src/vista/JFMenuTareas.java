@@ -448,7 +448,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         cCategoria.setBackground(new java.awt.Color(255, 255, 255));
         cCategoria.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         cCategoria.setForeground(new java.awt.Color(40, 44, 92));
-        cCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Bajo", "Medio", "Alto" }));
+        cCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Falla de acceso a aplicativos", "Novedades técnicas", "Error en el agendamiento de la visita", "Cancelar orden de visita", "Modificar dirección de visita", "Cambio de estado de la orden", "Registrar números adicionales", "Reactivar orden del cliente" }));
         cCategoria.setToolTipText("EL GRADO DE COMPLEJIDAD CONSIDERADO PARA SU TAREA");
         cCategoria.setBorder(null);
         cCategoria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -488,7 +488,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         cResponsable.setBackground(new java.awt.Color(255, 255, 255));
         cResponsable.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         cResponsable.setForeground(new java.awt.Color(40, 44, 92));
-        cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Responsable 1", "Responsable 2", " " }));
+        cResponsable.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Responsable 1", "Responsable 2", "Responsable 3", "Responsable 4" }));
         cResponsable.setToolTipText("RESPONSABLE");
         cResponsable.setBorder(null);
         cResponsable.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
