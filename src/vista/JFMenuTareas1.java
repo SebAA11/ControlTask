@@ -6,21 +6,21 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class JFMenuTareas extends JFrame {
+public class JFMenuTareas1 extends JFrame {
     controlador.ControladorJFMenuTareas ControladorJFMenuTareas= new ControladorJFMenuTareas();
     
-        public JFMenuTareas() {
+        public JFMenuTareas1() {
         initComponents();
        
     }
-    public JFMenuTareas(String nombreUsuario) {
+    public JFMenuTareas1(String nombreUsuario) {
         initComponents();
         jLabelNombreUsuario.setText("Bienvenido, " + nombreUsuario);
         
         this.setLocationRelativeTo(null);
         this.setResizable(false);
         bCrearT.setFocusPainted(false);
-        //bForms.setFocusPainted(false);
+        bForms.setFocusPainted(false);
         bTicket.setFocusPainted(false);
         bUsuario.setFocusPainted(false);
        
@@ -32,7 +32,7 @@ public class JFMenuTareas extends JFrame {
         // Agregar el efecto hover a los botones
     addHoverEffect(bTicket, colorDefault, colorHover, "/Imagenes/verTickets.png", "/Imagenes/verTicketsHover.png");
     addHoverEffect(bCrearT, colorDefault, colorHover, "/Imagenes/agregarTarea.png", "/Imagenes/agregarTareaHover.png");
-    //addHoverEffect(bForms, colorDefault, colorHover, "/Imagenes/Forms.png", "/Imagenes/FormsHover.png");
+    addHoverEffect(bForms, colorDefault, colorHover, "/Imagenes/Forms.png", "/Imagenes/FormsHover.png");
     addHoverEffect(bUsuario, colorDefault, colorHover, "/Imagenes/usuario.png", "/Imagenes/usuarioHover.png");
     addHoverEffect(bSalir6, colorSalir, colorSalir, "/Imagenes/salir.png", "/Imagenes/salirHover.png");
     }
@@ -150,6 +150,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         bTicket = new javax.swing.JButton();
         bUsuario = new javax.swing.JButton();
         bCrearT = new javax.swing.JButton();
+        bForms = new javax.swing.JButton();
         bSalir6 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jPanelCard = new javax.swing.JPanel();
@@ -240,7 +241,7 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
                 bTicketActionPerformed(evt);
             }
         });
-        JPanelMenu.add(bTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 220, 40));
+        JPanelMenu.add(bTicket, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 360, 220, 40));
 
         bUsuario.setBackground(new java.awt.Color(255, 255, 255));
         bUsuario.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
@@ -285,7 +286,27 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
                 bCrearTActionPerformed(evt);
             }
         });
-        JPanelMenu.add(bCrearT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 220, 40));
+        JPanelMenu.add(bCrearT, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 220, 40));
+
+        bForms.setBackground(new java.awt.Color(255, 255, 255));
+        bForms.setFont(new java.awt.Font("Nirmala UI", 1, 14)); // NOI18N
+        bForms.setForeground(new java.awt.Color(40, 44, 92));
+        bForms.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Forms.png"))); // NOI18N
+        bForms.setText("Forms");
+        bForms.setBorder(null);
+        bForms.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bForms.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        bForms.setIconTextGap(6);
+        bForms.setMargin(new java.awt.Insets(1, 1, 1, 1));
+        bForms.setMaximumSize(new java.awt.Dimension(600, 519));
+        bForms.setMinimumSize(new java.awt.Dimension(600, 519));
+        bForms.setPreferredSize(new java.awt.Dimension(318, 222));
+        bForms.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bFormsActionPerformed(evt);
+            }
+        });
+        JPanelMenu.add(bForms, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, 220, 40));
 
         bSalir6.setBackground(new java.awt.Color(255, 255, 255));
         bSalir6.setFont(new java.awt.Font("Nirmala UI", 0, 14)); // NOI18N
@@ -397,8 +418,8 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         jLabel.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel.setForeground(new java.awt.Color(40, 44, 92));
         jLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Titulo.png"))); // NOI18N
-        jLabel.setText("Asunto:");
-        JPanelCrearT.add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
+        jLabel.setText("Titulo:");
+        JPanelCrearT.add(jLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Nirmala UI", 1, 15)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(40, 44, 92));
@@ -582,6 +603,14 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
         
     }//GEN-LAST:event_bCrearTActionPerformed
 
+    private void bFormsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bFormsActionPerformed
+        // TODO add your handling code here:         
+        ControladorJFMenuTareas.hide_panel(JPanelTicket, JPanelUsuario, JPanelForms, JPanelCrearT);
+        JPanelForms.setVisible(true);
+        
+    
+    }//GEN-LAST:event_bFormsActionPerformed
+
     private void bUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bUsuarioActionPerformed
         // TODO add your handling code here:    
         ControladorJFMenuTareas.hide_panel(JPanelTicket, JPanelUsuario, JPanelForms, JPanelCrearT);
@@ -683,21 +712,23 @@ if (tTitulo.getText().equals("") ||
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFMenuTareas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(JFMenuTareas1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFMenuTareas().setVisible(true);
+                new JFMenuTareas1().setVisible(true);
             }
         });
     }
@@ -716,6 +747,7 @@ if (tTitulo.getText().equals("") ||
     private javax.swing.JPanel JPanelUsuario;
     public javax.swing.JButton bCrear;
     public javax.swing.JButton bCrearT;
+    public javax.swing.JButton bForms;
     public javax.swing.JButton bSalir;
     public javax.swing.JButton bSalir6;
     public javax.swing.JButton bTicket;
