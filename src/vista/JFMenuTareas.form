@@ -126,7 +126,7 @@
                   <Border info="null"/>
                 </Property>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Hand Cursor"/>
+                  <Color id="Cursor Por defecto"/>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="4"/>
                 <Property name="iconTextGap" type="int" value="6"/>
@@ -174,7 +174,7 @@
                   <Border info="null"/>
                 </Property>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Hand Cursor"/>
+                  <Color id="Cursor Por defecto"/>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="4"/>
                 <Property name="iconTextGap" type="int" value="6"/>
@@ -223,7 +223,7 @@
                   <Border info="null"/>
                 </Property>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Hand Cursor"/>
+                  <Color id="Cursor Por defecto"/>
                 </Property>
                 <Property name="horizontalTextPosition" type="int" value="4"/>
                 <Property name="iconTextGap" type="int" value="6"/>
@@ -270,7 +270,7 @@
                   <Border info="null"/>
                 </Property>
                 <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                  <Color id="Hand Cursor"/>
+                  <Color id="Cursor Por defecto"/>
                 </Property>
               </Properties>
               <Events>
@@ -488,7 +488,7 @@
                           <Border info="null"/>
                         </Property>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                          <Color id="Hand Cursor"/>
+                          <Color id="Cursor Por defecto"/>
                         </Property>
                       </Properties>
                       <Events>
@@ -555,9 +555,6 @@
               <SubComponents>
                 <Component class="javax.swing.JSeparator" name="jSeparator2">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="5c" green="2c" red="28" type="rgb"/>
                     </Property>
@@ -628,9 +625,6 @@
                   <SubComponents>
                     <Component class="javax.swing.JTextArea" name="tDescripcion">
                       <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                        </Property>
                         <Property name="columns" type="int" value="20"/>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Nirmala UI" size="15" style="0"/>
@@ -644,7 +638,7 @@
                           <Border info="null"/>
                         </Property>
                         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                          <Color id="Text Cursor"/>
+                          <Color id="Cursor Por defecto"/>
                         </Property>
                       </Properties>
                     </Component>
@@ -674,9 +668,6 @@
                 </Component>
                 <Component class="javax.swing.JComboBox" name="cCategoria">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Nirmala UI" size="15" style="1"/>
                     </Property>
@@ -701,7 +692,7 @@
                       <Border info="null"/>
                     </Property>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Hand Cursor"/>
+                      <Color id="Cursor Por defecto"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -738,9 +729,6 @@
                 </Component>
                 <Component class="javax.swing.JComboBox" name="cEstado">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Nirmala UI" size="15" style="1"/>
                     </Property>
@@ -760,7 +748,7 @@
                       <Border info="null"/>
                     </Property>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Hand Cursor"/>
+                      <Color id="Cursor Por defecto"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -800,9 +788,6 @@
                 </Component>
                 <Component class="javax.swing.JComboBox" name="cResponsable">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Nirmala UI" size="15" style="1"/>
                     </Property>
@@ -823,7 +808,7 @@
                       <Border info="null"/>
                     </Property>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Hand Cursor"/>
+                      <Color id="Cursor Por defecto"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -857,7 +842,7 @@
                       </Border>
                     </Property>
                     <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-                      <Color id="Hand Cursor"/>
+                      <Color id="Cursor Por defecto"/>
                     </Property>
                   </Properties>
                   <Events>
@@ -874,9 +859,6 @@
                 </Component>
                 <Component class="javax.swing.JTextField" name="tTitulo">
                   <Properties>
-                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                    </Property>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Nirmala UI" size="15" style="0"/>
                     </Property>
@@ -927,12 +909,6 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="horizontalScrollBarPolicy" type="int" value="31"/>
-                    <Property name="rowHeaderView" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                      <ComponentRef name="null"/>
-                    </Property>
-                    <Property name="viewportView" type="java.awt.Component" editor="org.netbeans.modules.form.ComponentChooserEditor">
-                      <ComponentRef name="JPanelPrincipalTickets"/>
-                    </Property>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

@@ -1,5 +1,9 @@
 package vista;
 
+import CONEXION.CConexion;
+import CONEXION.TicketBD;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import controlador.ControladorJFMenuTareas;
 import javax.swing.*;
 import java.awt.*;
@@ -37,7 +41,7 @@ public class JFMenuTareas extends JFrame {
     addHoverEffect(bSalir6, colorSalir, colorSalir, "/Imagenes/salir.png", "/Imagenes/salirHover.png");
     }
     
-public void agregarTicketVisual(JPanel contenedor, String titulo, String estado, String responsable, String descripcion, String categoria) {
+public void agregarTicketVisual(JPanel contenedor, String titulo, String estado, String responsable, String descripcion, String categoria, int id) {
     JPanel ticket = new JPanel();
     ticket.setLayout(new BoxLayout(ticket, BoxLayout.Y_AXIS));
     ticket.setBorder(BorderFactory.createLineBorder(Color.GRAY));
@@ -53,6 +57,8 @@ public void agregarTicketVisual(JPanel contenedor, String titulo, String estado,
     JPanel panelBotones = new JPanel(new FlowLayout(FlowLayout.LEFT));
     JButton BMover = new JButton("Mover a...");
     JButton BEliminar = new JButton("Eliminar");
+    
+            final int idFinal = id; // para usar en el listener
 
     // Funcionalidad para botón MOVER
     BMover.addActionListener(e -> {
@@ -68,34 +74,66 @@ public void agregarTicketVisual(JPanel contenedor, String titulo, String estado,
         );
 
         if (nuevoEstado != null && !nuevoEstado.equals(estado)) {
-            contenedor.remove(ticket); // Elimina del panel actual
+            contenedor.remove(ticket);
 
-            // Agrega al nuevo panel según el estado
-            if (nuevoEstado.equals("Abierto")) {
-                agregarTicketVisual(JPanelAbierto, titulo, nuevoEstado, responsable, descripcion, categoria);
-            } else if (nuevoEstado.equals("En progreso")) {
-                agregarTicketVisual(JPanelProgreso, titulo, nuevoEstado, responsable, descripcion, categoria);
-            } else if (nuevoEstado.equals("Cerrado")) {
-                agregarTicketVisual(JPanelCerrado, titulo, nuevoEstado, responsable, descripcion, categoria);
+            if (nuevoEstado.equalsIgnoreCase("Abierto")) {
+                agregarTicketVisual(JPanelAbierto, titulo, nuevoEstado, responsable, descripcion, categoria, idFinal);
+            } else if (nuevoEstado.equalsIgnoreCase("En progreso")) {
+                agregarTicketVisual(JPanelProgreso, titulo, nuevoEstado, responsable, descripcion, categoria, idFinal);
+            } else if (nuevoEstado.equalsIgnoreCase("Cerrado")) {
+                agregarTicketVisual(JPanelCerrado, titulo, nuevoEstado, responsable, descripcion, categoria, idFinal);
             }
 
             contenedor.revalidate();
             contenedor.repaint();
+            
+            // 🔄 ACTUALIZAR EN BASE DE DATOS
+        try {
+                CConexion conexion = new CConexion();
+                Connection con = conexion.estableceConexion();
+
+                String sql = "UPDATE tickets SET estado = ? WHERE id = ?";
+                PreparedStatement ps = con.prepareStatement(sql);
+                ps.setString(1, nuevoEstado);
+                ps.setInt(2, idFinal);
+
+                int filas = ps.executeUpdate();
+                if (filas > 0) {
+                    System.out.println("Estado actualizado correctamente en BD.");
+                }
+
+                ps.close();
+                con.close();
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, "Error al actualizar estado: " + ex.getMessage());
+            }
         }
     });
 
     // Funcionalidad para botón ELIMINAR
     BEliminar.addActionListener(e -> {
-        int confirm = JOptionPane.showConfirmDialog(
-            null,
-            "¿Está seguro de eliminar este ticket?",
-            "Confirmar eliminación",
-            JOptionPane.YES_NO_OPTION
-        );
+         int confirm = JOptionPane.showConfirmDialog(null, "¿Estás seguro de eliminar este ticket?", "Confirmar", JOptionPane.YES_NO_OPTION);
         if (confirm == JOptionPane.YES_OPTION) {
             contenedor.remove(ticket);
             contenedor.revalidate();
             contenedor.repaint();
+
+            try {
+                CConexion conexion = new CConexion();
+                Connection con = conexion.estableceConexion();
+
+                String sql = "DELETE FROM tickets WHERE id = ?";
+                PreparedStatement ps = con.prepareStatement(sql);
+                ps.setInt(1, idFinal);
+
+                ps.executeUpdate();
+                ps.close();
+                con.close();
+
+                JOptionPane.showMessageDialog(null, "Ticket eliminado correctamente.");
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, "Error al eliminar ticket: " + ex.getMessage());
+            }
         }
     });
 
@@ -624,14 +662,24 @@ if (tTitulo.getText().equals("") ||
     String categoria = cCategoria.getSelectedItem().toString();
     String estado = cEstado.getSelectedItem().toString();
     String responsable = cResponsable.getSelectedItem().toString();
+    
+    // Guardar en base de datos usando de la clase TicketBD
+        TicketBD ticketBD = new TicketBD();
+         int id = ticketBD.crearTicket(titulo, descripcion, categoria, estado, responsable);    
+
+        if (id == -1) {
+        JOptionPane.showMessageDialog(this, "Error al guardar en la base de datos.", "Error", JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
 
     // Insertar visualmente en el panel correspondiente
     if (estado.equalsIgnoreCase("Abierto")) {
-        agregarTicketVisual(JPanelAbierto, titulo, estado, responsable, descripcion, categoria);
+        agregarTicketVisual(JPanelAbierto, titulo, estado, responsable, descripcion, categoria, id);
     } else if (estado.equalsIgnoreCase("En progreso")) {
-        agregarTicketVisual(JPanelProgreso, titulo, estado, responsable, descripcion, categoria);
+        agregarTicketVisual(JPanelProgreso, titulo, estado, responsable, descripcion, categoria, id);
     } else if (estado.equalsIgnoreCase("Cerrado")) {
-        agregarTicketVisual(JPanelCerrado, titulo, estado, responsable, descripcion, categoria);
+        agregarTicketVisual(JPanelCerrado, titulo, estado, responsable, descripcion, categoria, id);
     }
 
     JOptionPane.showMessageDialog(this, "Se creó la tarea exitosamente.");
