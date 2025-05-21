@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class TicketBD {
 
@@ -41,4 +42,36 @@ public class TicketBD {
 
         return idGenerado;
     }
+    public static ArrayList<Ticket> obtenerTickets() {
+    ArrayList<Ticket> lista = new ArrayList<>();
+    try {
+        CConexion conexion = new CConexion();
+        Connection con = conexion.estableceConexion();
+
+        String sql = "SELECT * FROM tickets";
+        PreparedStatement ps = con.prepareStatement(sql);
+        ResultSet rs = ps.executeQuery();
+
+        while (rs.next()) {
+            Ticket ticket = new Ticket(
+                rs.getInt("id"),
+                rs.getString("titulo"),
+                rs.getString("descripcion"),
+                rs.getString("categoria"),
+                rs.getString("estado"),
+                rs.getString("responsable")
+            );
+            lista.add(ticket);
+        }
+
+        rs.close();
+        ps.close();
+        con.close();
+    } catch (SQLException ex) {
+        System.out.println("Error al obtener tickets: " + ex.getMessage());
+    }
+
+    return lista;
+}
+
 }

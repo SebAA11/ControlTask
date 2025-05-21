@@ -1,6 +1,7 @@
 package vista;
 
 import CONEXION.CConexion;
+import CONEXION.Ticket;
 import CONEXION.TicketBD;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,10 +16,12 @@ public class JFMenuTareas extends JFrame {
     
         public JFMenuTareas() {
         initComponents();
+    
        
     }
     public JFMenuTareas(String nombreUsuario) {
         initComponents();
+     
         jLabelNombreUsuario.setText("Bienvenido, " + nombreUsuario);
         
         this.setLocationRelativeTo(null);
@@ -39,6 +42,7 @@ public class JFMenuTareas extends JFrame {
     //addHoverEffect(bForms, colorDefault, colorHover, "/Imagenes/Forms.png", "/Imagenes/FormsHover.png");
     addHoverEffect(bUsuario, colorDefault, colorHover, "/Imagenes/usuario.png", "/Imagenes/usuarioHover.png");
     addHoverEffect(bSalir6, colorSalir, colorSalir, "/Imagenes/salir.png", "/Imagenes/salirHover.png");
+    cargarTickets();
     }
     
 public void agregarTicketVisual(JPanel contenedor, String titulo, String estado, String responsable, String descripcion, String categoria, int id) {
@@ -175,6 +179,27 @@ private void addHoverEffect(JButton button, Color colorDefault, Color colorHover
     });
     
 }
+public void cargarTickets() {
+    java.util.ArrayList<Ticket> lista = TicketBD.obtenerTickets();
+
+    for (Ticket t : lista) {
+        switch (t.getEstado().toLowerCase()) {
+            case "abierto":
+                agregarTicketVisual(JPanelAbierto, t.getTitulo(), t.getEstado(), t.getResponsable(), t.getDescripcion(), t.getCategoria(), t.getId());
+                break;
+            case "en progreso":
+                agregarTicketVisual(JPanelProgreso, t.getTitulo(), t.getEstado(), t.getResponsable(), t.getDescripcion(), t.getCategoria(), t.getId());
+                break;
+            case "cerrado":
+                agregarTicketVisual(JPanelCerrado, t.getTitulo(), t.getEstado(), t.getResponsable(), t.getDescripcion(), t.getCategoria(), t.getId());
+                break;
+            default:
+                // Puedes agregar un panel adicional o mostrar alerta si quieres
+                break;
+        }
+    }
+}
+
   
 
     @SuppressWarnings("unchecked")
